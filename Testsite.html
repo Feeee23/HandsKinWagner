@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include MetaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <!-- Include Handsfree.js -->
+    <link rel="stylesheet" href="https://unpkg.com/handsfree@8.5.1/build/lib/assets/handsfree.css" />
+    <script src="https://unpkg.com/handsfree@8.5.1/build/lib/handsfree.js"></script>
+    
+    <!-- Styles -->
+    <style>
+        .table, th, td{
+            border-color: black;
+            border: solid thin;
+            padding: 0.2cm;
+            margin: 1cm;
+        }
+        #coll { border-collapse: collapse; }
+        .dot {
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dotRed {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> <!--Headline-->
+        <center>
+            <h1>Finger tracking</h1>
+        </center>
+    </div>
+    <div class="container" style="margin: 1cm;"> <!--Video input & output-->
+            <center>
+            <video class="input_video" style="display: none;"></video>
+            <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+        </center>
+    </div> 
+    <div> <!--Status Table-->
+        <center>
+            <table id="coll">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Zeigefinger [0]</th>
+                        <th>Mittelfinger [1]</th>
+                        <th>Ringfinger [2]</th>
+                        <th>kleiner Finger [3]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>linke Hand [0]</th>
+                        <td><center><span class="dot" id="F00"></span></center></td>
+                        <td><center><span class="dot" id="F01"></span></center></td>
+                        <td><center><span class="dot" id="F02"></span></center></td>
+                        <td><center><span class="dot" id="F03"></span></center></td>
+                    </tr>
+                    <tr>
+                        <th>rechte Hand [1]</th>
+                        <td><center><span class="dot" id="F10"></span></center></td>
+                        <td><center><span class="dot" id="F11"></span></center></td>
+                        <td><center><span class="dot" id="F12"></span></center></td>
+                        <td><center><span class="dot" id="F13"></span></center></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+    <!--Visualiszation video and finger tracker-->
+    <script type="module"> 
+        const videoElement = document.getElementsByClassName('input_video')[0];
+        const canvasElement = document.getElementsByClassName('output_canvas')[0];
+        const canvasCtx = canvasElement.getContext('2d');
+        
+        function onResults(results) {
+          canvasCtx.save();
+          canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+          canvasCtx.drawImage(
+              results.image, 0, 0, canvasElement.width, canvasElement.height);
+          if (results.multiHandLandmarks) {
+            for (const landmarks of results.multiHandLandmarks) {
+              drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS,
+                             {color: '#00FF00', lineWidth: 5});
+              drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 2});
+            }
+          }
+          canvasCtx.restore();
+        }
+        
+        const hands = new Hands({locateFile: (file) => {
+          return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+        }});
+        hands.setOptions({
+          maxNumHands: 2,
+          modelComplexity: 1,
+          minDetectionConfidence: 0.5,
+          minTrackingConfidence: 0.5
+        });
+        hands.onResults(onResults);
+        
+        const camera = new Camera(videoElement, {
+          onFrame: async () => {
+            await hands.send({image: videoElement});
+          },
+          width: 1280,
+          height: 720
+        });
+        camera.start();
+    </script>
+    <!-- Read for Finger state -->
+    <script>
+        const handsfree = new Handsfree({hands:true})
+        handsfree.start()
+        for (let hand = 0; hand < 2; hand++) {
+            for (let finger = 0; finger < 4; finger++) {
+                handsfree.on(`finger-pinched-start-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.add('dotRed')
+                    //Add Get request here
+                })
+                handsfree.on(`finger-pinched-released-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.remove('dotRed')
+                    //Add Get request here
+                })
+            }
+        }
+    </script>
+</body>
