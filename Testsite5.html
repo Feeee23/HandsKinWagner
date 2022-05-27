@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Handsfree.js -->
+    <link rel="stylesheet" href="https://unpkg.com/handsfree@8.5.1/build/lib/assets/handsfree.css" />
+    <script src="https://unpkg.com/handsfree@8.5.1/build/lib/handsfree.js"></script>
+    <!-- Styles -->
+    <style>
+        .table, th, td{
+            border-color: black;
+            border: solid thin;
+            padding: 0.2cm;
+            margin: 1cm;
+        }
+        #coll { border-collapse: collapse; }
+        .dot {
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dotRed {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> <!--Headline-->
+        <center>
+            <h1>Finger tracking</h1>
+        </center>
+    </div>
+    <!-- Holds the Video -->
+    <center>
+    <div id="video-holder"  style="margin: 1cm; width: 1280px; height: 720px"></div> 
+    </center>
+    <div> <!--Status Table-->
+        <center>
+            <table id="coll">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Zeigefinger [0]</th>
+                        <th>Mittelfinger [1]</th>
+                        <th>Ringfinger [2]</th>
+                        <th>kleiner Finger [3]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>linke Hand [0]</th>
+                        <td><center><span class="dot" id="F00"></span></center></td>
+                        <td><center><span class="dot" id="F01"></span></center></td>
+                        <td><center><span class="dot" id="F02"></span></center></td>
+                        <td><center><span class="dot" id="F03"></span></center></td>
+                    </tr>
+                    <tr>
+                        <th>rechte Hand [1]</th>
+                        <td><center><span class="dot" id="F10"></span></center></td>
+                        <td><center><span class="dot" id="F11"></span></center></td>
+                        <td><center><span class="dot" id="F12"></span></center></td>
+                        <td><center><span class="dot" id="F13"></span></center></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+	
+	<!-- For sending GET Requests: -->
+	<script>
+
+	function httpGet(theUrl) {
+	  let xmlHttpReq = new XMLHttpRequest();
+      let url = 'http://192.168.0.107:8001/WebServerHand/GetPinchState'+theUrl; //IP des rechners (oder localhost) und PORT 8001 bei Testserver sonst 80
+	  xmlHttpReq.open("GET", url, false);
+      //xmlHttpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
+	  xmlHttpReq.send();
+	  return xmlHttpReq.responseText;
+	}
+	</script>
+	
+    <!-- Read for Finger state -->
+    <script>
+        const handsfree = new Handsfree({
+            // Show debug inside a specific element
+            showDebug: true,
+            setup: {
+                wrap: {
+                $parent: document.querySelector('#video-holder')
+                }
+            },
+            hands:{
+                enabled:true,
+                // The maximum number of hands to detect [0 - 4]
+                maxNumHands: 1,
+
+                // Minimum confidence [0 - 1] for a hand to be considered detected
+                minDetectionConfidence: 0.9,
+
+                // Minimum confidence [0 - 1] for the landmark tracker to be considered detected
+                // Higher values are more robust at the expense of higher latency
+                minTrackingConfidence: 0.9
+             }
+        })
+        handsfree.start()
+
+        let FingerState =[1,0,0,0];
+		let IP = ":8080"; // adress and Port to send GET requests to
+		let time_delay = 500;
+		
+		// Websocket to send data to: (use python websocketserver for testing)
+		var websocket = new WebSocket("ws://localhost:2323");
+		websocket.onmessage = function (e) {
+			console.log('message from server', e.data);
+		};
+		
+		// initialize callbacks for pinch/release events:
+		let send_timeout=[];
+        for (let hand = 0; hand < 2; hand++) {
+            for (let finger = 0; finger < 4; finger++) {
+                handsfree.on(`finger-pinched-start-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.add('dotRed')
+					if(hand==0){ // nur Rechte Hand
+						return;
+					}
+                    let id=finger+hand*4;
+					clearTimeout(send_timeout[id]);
+					send_timeout[id] = setTimeout(function(){
+                        FingerState[finger]=1
+						httpGet("?finger3="+FingerState[3]+"&finger2="+FingerState[2]+"&finger1="+FingerState[1]+"&finger0="+FingerState[0])  // Sends Get request //pinched=1
+						//websocket.send("finger"+finger+"=pinched");  // Send web_socket - message
+					}, time_delay); // delay before a state is beeing send
+                })
+                handsfree.on(`finger-pinched-released-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.remove('dotRed')
+					if(hand==0){ // nur Rechte Hand
+						return;
+					}
+					let id=finger+hand*4;
+					clearTimeout(send_timeout[id]);
+					send_timeout[id] = setTimeout(function(){
+						FingerState[finger]=0
+						httpGet("?finger3="+FingerState[3]+"&finger2="+FingerState[2]+"&finger1="+FingerState[1]+"&finger0="+FingerState[0])  // Sends Get request //pinched=1
+						//websocket.send("finger"+finger+"=released");  // Send web_socket - message
+					}, time_delay); // delay before a state is beeing send
+                })
+            }
+        }
+    </script>
+</body>
+
+
+<!--ToDO
+    CORS Error --Allow-Control-Allow-Origin aktueller fix ist plugin ist nicht universal
+    |->https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc/related?hl=en-US
+-->
