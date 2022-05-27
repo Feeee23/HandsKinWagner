@@ -2,7 +2,11 @@
 Handtracking Vorprojekt Wagner
 
 ## How to use:
-
+## Testseite 5
+  1. Labview projekt starten
+  2. einstellungen vornehmen und server starten nach Bild
+  3. Start Testsite 5 evtl muss die IP (Z:75) angepasst werden
+## Testseit 4
 ### Websocket:
 1. Start my_websocket_server.py  (must install websocket-server: `pip install websocket-server`)
 2. open Testsite in browser
