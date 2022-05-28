@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'ESVmS_Projekt_Gruppe8.blg'
+[40] biber:340> INFO - === Sa Mai 28, 2022, 09:15:07
+[48] Biber.pm:418> INFO - Reading 'ESVmS_Projekt_Gruppe8.bcf'
+[90] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[98] bbl.pm:654> INFO - Writing 'ESVmS_Projekt_Gruppe8.bbl' with encoding 'UTF-8'
+[98] bbl.pm:757> INFO - Output to ESVmS_Projekt_Gruppe8.bbl
+[98] Biber.pm:130> WARN - The file 'ESVmS_Projekt_Gruppe8.bcf' does not contain any citations!
+[98] Biber.pm:132> INFO - WARNINGS: 1
