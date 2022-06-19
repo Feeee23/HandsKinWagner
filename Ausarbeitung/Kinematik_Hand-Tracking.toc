@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{Abbildungsverzeichnis und Tabellenverzeichnis}{III}{section*.4}% 
+\contentsline {section}{\numberline {1}Einleitung }{1}{section.1}% 
+\contentsline {section}{\numberline {2}Stand der Technik}{1}{section.2}% 
+\contentsline {section}{\numberline {3}M\IeC {\"o}gliche Konzepte}{1}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Bautenz\IeC {\"u}ge \IeC {\"u}ber Finger}{2}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Biegesensoren DMS}{2}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Image Processing}{2}{subsection.3.3}% 
+\contentsline {section}{\numberline {4}Umsetzung des Konzepts}{2}{section.4}% 
+\contentsline {section}{\numberline {5}Fazit}{2}{section.5}% 
+\contentsline {section}{\numberline {6}Ausblick}{2}{section.6}% 
+\contentsline {section}{Literaturverzeichnis}{A}{section*.7}% 
+\contentsline {section}{Anhang}{A}{section*.8}% 

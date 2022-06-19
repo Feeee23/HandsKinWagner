@@ -1,0 +1,171 @@
+\documentclass[a4paper,12pt,final]{article} %Papierformat, Schriftgröße, BadBox markieren Bilder nich anzeigen (draft/final)
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,textcomp} %textfont deutlich runder/schöner + Eurozeichen richtig
+%\renewcommand*\familydefault{\sfdefault} %Serifenlos
+\usepackage[onehalfspacing]{setspace} %Zeilenabstand
+\usepackage[left=2.6cm, right=2.6cm, top=3cm, bottom=3cm]{geometry} %Seitenränder
+\usepackage{graphicx} %bilder (includegraphics)
+\usepackage{todonotes}
+\usepackage[hang]{footmisc} % Fußnoten 2. Zeile einrücken
+\usepackage{float} %Positionierung von Bildern etc. [h] 
+\usepackage{booktabs} %Tabellen
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{siunitx} %Zahlen zb exp oder einheiten
+\usepackage{csquotes} %sonst bringt babble n Fehler
+\usepackage[backend=biber, %Verarbeitet die BibTex datei und aktualisiert sich mit F11
+			style=numeric-comp, %macht nummern aus den Quellen?!?
+			sorting=none,]{biblatex} %stell sortiern nach Namen der Autoren aus
+\DefineBibliographyStrings{ngerman}{ %macht aus u.a. -> et al.
+   andothers = {{et\,al\adddot}},
+}
+\bibliography{Literatur.bib}  % Literatur verzeichniss
+\usepackage[english,ngerman]{babel}  % The last language in the list is the primary one.
+\usepackage{pdfpages} %zum Anhängen von PDF's (Reflexion A&B)
+\usepackage[pdfusetitle, colorlinks, linkcolor=black, citecolor=black, urlcolor=gray,]{hyperref}  % Add clickable links for figures etc. Comment out for printing if desired.
+\numberwithin{equation}{section} %nummeriert Formeln mit Kapitelnummer.Formelnummer ACHTUNG! muss nach hyperref kommen.
+\numberwithin{figure}{section} %numeriert Bilder mit Kapitelnummer.Bildnummer ACHTUNG! muss nach hyperref kommen.
+\numberwithin{table}{section} %numeriert Tabellen mit Kapitelnummer.Tabelle ACHTUNG! muss nach hyperref kommen.
+\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben?? mach die Zeilenumbrüche bei link's
+\setcounter{biburlucpenalty}{9000}% Großbuchstaben?? mach die Zeilenumbrüche bei link's
+\setcounter{tocdepth}{2} %Tiefe des Literaturverzeichnises, 2=inkl. subsecion so nur eine Seite Inhaltsverzeichnis
+\setlength{\parindent}{0pt} %einrücken bei absätzen verhindern
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{bg_col}{rgb}{1,1,0.7}
+
+\lstset{ %
+  backgroundcolor=\color{bg_col},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+}
+
+\usepackage{fancyhdr} %Kopf/Fußzeile
+\pagestyle{fancy}
+\setlength{\headheight}{28pt}
+%\setlength{\footheight}{30pt}
+\lhead{\nouppercase{\leftmark}}
+\rhead{\includegraphics[width=3cm]{Bilder/logo.pdf}}
+\lfoot{Abt \& Girke}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\begin{document}
+\begin{center} %Titelseite
+	\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=8cm]{Bilder/logo.pdf} %bilder vertical anordnen zueinander
+		\vspace{2cm}
+	\end{center}
+	\end{figure}
+	\begin{Large}	
+		\textbf{Entwicklung und Umsetzung einer intuitiven Steuerung für eine Roboterhand durch Erfassen
+		der Geste einer menschlichen Hand\linebreak \linebreak Kinematik Labor\\}
+		\vspace{1.5cm}
+	\end{Large}
+	\begin{large}
+		des Studienganges Mechatronik und Robotik\linebreak		
+		an der Frankfurt University of Applied Sciences\linebreak\linebreak
+		von
+		\begin{longtable}[b]{c c}
+		Peter Abt & 1400337\\
+		Felix Girke & 1386888\\
+		\end{longtable}
+		\vspace{1cm}
+		\today\linebreak \linebreak
+		\begin{longtable}[b]{p{7.9cm} p{6.9cm}}
+		Bearbeitungszeitraum: & Wochen\\
+		Betreuer & Prof. Dr. Enno Wagner
+		\end{longtable}\todo{Bearbeitungszeitraum}
+	\end{large}
+\end{center} 
+\thispagestyle{empty}%ende Titelseite
+\setcounter{page}{0}
+\newpage
+\pagenumbering{Roman}
+\markboth{Selbstständigkeitserklärung}{}
+\section*{Selbstständigkeitserklärung}
+%\addcontentsline{toc}{section}{Selbstständigkeitserklärung} %Fügt das zum Inhaltsverzeichnis hinzu,
+Wir versicheren hiermit, dass wir die Projektarbeit mit dem Thema: \glqq Entwicklung und Umsetzung einer intuitiven Steuerung für eine Roboterhand durch Erfassen
+der Geste einer menschlichen Hand \grqq\ , selbst\-ständ\-ig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben.\vspace{2.5cm}
+\begin{longtable}{p{5.5cm} p{3cm} p{6cm}}
+ Frankfurt a. M., \today& & \\
+ \cline{1-1} \cline{3-3}
+ Ort, Datum& &Unterschrift (Abt)\\
+\end{longtable}
+\vspace{0.5cm}
+\begin{longtable}{p{5.5cm} p{3cm} p{6cm}}
+ Frankfurt a. M., \today& & \\
+ \cline{1-1} \cline{3-3}
+ Ort, Datum& &Unterschrift (Girke)\\
+\end{longtable}
+\addtocounter{table}{-1} % wird nicht mitgezählt bei der Tabellen Nr.
+\newpage
+%\markboth{Zusammenfassung}{}
+%\section*{Zusammenfassung}
+%\addcontentsline{toc}{section}{Zusammenfassung} %Fügt das zum Inhaltsverzeichnis hinzu
+%\todo{brauchen wir das hier?}
+%\newpage
+\tableofcontents %Inhaltsverzeichis
+\newpage
+\phantomsection  %korregiert die links auf die Seite
+\addcontentsline{toc}{section}{Abbildungsverzeichnis und Tabellenverzeichnis} %Fügt das Abbildungs zum Inhaltsverzeichnis hinzu
+\listoffigures %abbildungsverzeichnis
+\listoftables %tabellenverzeichnis
+\newpage
+\pagenumbering{arabic}
+\section[Einleitung ]{Einleitung} \sectionmark{Einleitung}
+Alles das \emph{so geschrieben ist, } ist von der Laboreinleitung\\
+\emph{Einführung, Motivation}
+
+
+\section{Stand der Technik}
+\emph{Stand der Technik (Literatur/Patent-Recherche)}
+
+Die Echtzeit-Erkennung von Handbewegungen ist für Steuerung von humanoiden Händen ist von Essenz. Die komplexen Bewegungsabläufe der menschlichen Hand lassen sich aufgrund der großen Anzahl an Fingersegmenten und Freiheitsgraden nur mit hohem Aufwand erfassen. Und eine Steuerung mittels Joysticks o.ä. ist ungeeignet.
+Erste Versuche die Bewegungsabläufe der Hand aufzunehmen wurden mithilfe von in Handschuhen eingebauten Biegesensoren \cite{FlexSensor} und Lagesensoren durchgeführt.  Die zu dieser Zeit boomende Computerspielindustrie griff die Idee schnell auf und brachte den, technisch vereinfachten, PowerGlove \cite{PowerGlove} auf den Markt. Heute sind verschiedene Firmen im Markt die professionelle Systeme vertreiben wie CyberGlove Systems \cite{CyberGlove} oder Cobra Glove \cite{CobraGlove}. Diese bedienen sich meist der Erfassung der Fingerpositionen durch eine Kombination von mehreren an den Fingern angebrachten Inertial Measurment Units (IMUs) und Biegesensoren.
+
+Handschuhe haben im allgemeinen einige Nachteile die sie mit sich bringen. Der an und Abziehvorgan ist umständlich, die Größe des Handschuhes muss stimmen, Desinfektionsmaßnahmen sind kompliziert.
+
+Alternativ werden Handbewegungen auch mit Bewegungserkennungssystemen durch Marker und IR-Kamerasystemen aufgezeichnet. Über Triangolie die Position der einzellnen Markerpunkte berechnet. Hier ist die Firma VICON ein Vorreiter auf dem Markt.
+
+Auch markerlose Kamerasysteme zur Bewegungserkennung existieren wie durch z.B. die Kinect Kamera ermöglicht.
+
+
+
+\section{Mögliche Konzepte}
+\emph{Experimental (Vorgehen/Methoden zur Konstruktion, Berechnung, Simulation)}
+\subsection{Bautenzüge über Finger}
+\subsection{Biegesensoren DMS}
+\subsection{Image Processing}
+\section{Umsetzung des Konzepts}
+\emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
+Konzept Auswahl
+\section{Fazit}
+\emph{Diskussion (Interpretation und Beurteilung der Ergebnisse)}
+\section{Ausblick}
+\emph{Zusammenfassung und Ausblick (Vorschläge für weiterführende Arbeiten)}
+\newpage
+\pagenumbering{Alph}
+\phantomsection 
+\addcontentsline{toc}{section}{Literaturverzeichnis} %Fügt das Literaturverzn soeichnis zum Inhaltsverzeichnis hinzu
+\printbibliography  % Literaturliste ausgeben.
+\newpage
+\section*{Anhang} \sectionmark{Anhang}
+\addcontentsline{toc}{section}{Anhang} %Fügt den Anhang zum Inhaltsverzeichnis hinzu
+\begin{enumerate}
+	\item Code für Ansteuerung Klemmgreifer \& Magnetgreifer
+\end{enumerate}
+\end{document}
