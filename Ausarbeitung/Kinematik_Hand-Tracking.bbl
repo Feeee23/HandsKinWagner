@@ -1,0 +1,139 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{FlexSensor}{article}{}
+      \name{author}{1}{}{%
+        {{hash=46aa5b54c7c6d0a3bd1579bf7dc44c25}{%
+           family={{Thomas G. Zimmerman}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \strng{fullhash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \strng{bibnamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \strng{authorbibnamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \strng{authornamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \strng{authorfullhash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{US 4542291}
+      \field{title}{Optical flex sensor}
+      \field{year}{1982}
+    \endentry
+    \entry{PowerGlove}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=78d8cf8efb7de074975b11efdabacda5}{%
+           family={{Greg Bryant, Russell Eberhart, Erik Frederick, John Gawel, Stephen Turner}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{78d8cf8efb7de074975b11efdabacda5}
+      \strng{fullhash}{78d8cf8efb7de074975b11efdabacda5}
+      \strng{bibnamehash}{78d8cf8efb7de074975b11efdabacda5}
+      \strng{authorbibnamehash}{78d8cf8efb7de074975b11efdabacda5}
+      \strng{authornamehash}{78d8cf8efb7de074975b11efdabacda5}
+      \strng{authorfullhash}{78d8cf8efb7de074975b11efdabacda5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{1993 VR Conference Proceedings: abgerufen am 19.06.22}
+      \field{year}{1993}
+      \verb{file}
+      \verb https://www.csun.edu/~hfdss006/conf/1993/proceedings/Glove~1.htm
+      \endverb
+    \endentry
+    \entry{CyberGlove}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aa76858c9b8f06e5524bfa9246689595}{%
+           family={{CyberGlove}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa76858c9b8f06e5524bfa9246689595}
+      \strng{fullhash}{aa76858c9b8f06e5524bfa9246689595}
+      \strng{bibnamehash}{aa76858c9b8f06e5524bfa9246689595}
+      \strng{authorbibnamehash}{aa76858c9b8f06e5524bfa9246689595}
+      \strng{authornamehash}{aa76858c9b8f06e5524bfa9246689595}
+      \strng{authorfullhash}{aa76858c9b8f06e5524bfa9246689595}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cyber Glove Systems}
+      \field{year}{2017}
+      \verb{file}
+      \verb http://www.cyberglovesystems.com
+      \endverb
+    \endentry
+    \entry{CobraGlove}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=283cd6eef440269b0fdab5e2510eb17a}{%
+           family={{AiQ Synertial}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{283cd6eef440269b0fdab5e2510eb17a}
+      \strng{fullhash}{283cd6eef440269b0fdab5e2510eb17a}
+      \strng{bibnamehash}{283cd6eef440269b0fdab5e2510eb17a}
+      \strng{authorbibnamehash}{283cd6eef440269b0fdab5e2510eb17a}
+      \strng{authornamehash}{283cd6eef440269b0fdab5e2510eb17a}
+      \strng{authorfullhash}{283cd6eef440269b0fdab5e2510eb17a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{High-End Gloves for Robotics, Animation, Virtual Reality, Medical and Bio-mechanics Research}
+      \field{year}{2022}
+      \verb{file}
+      \verb https://www.synertial.com/cobra-gloves
+      \endverb
+    \endentry
+    \entry{NIwebserverTutorial}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=20b93550b7f746a4a453b3de825e038f}{%
+           family={CORP.},
+           familyi={C\bibinitperiod},
+           given={NATIONAL\bibnamedelima INSTRUMENTS},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{20b93550b7f746a4a453b3de825e038f}
+      \strng{fullhash}{20b93550b7f746a4a453b3de825e038f}
+      \strng{bibnamehash}{20b93550b7f746a4a453b3de825e038f}
+      \strng{authorbibnamehash}{20b93550b7f746a4a453b3de825e038f}
+      \strng{authornamehash}{20b93550b7f746a4a453b3de825e038f}
+      \strng{authorfullhash}{20b93550b7f746a4a453b3de825e038f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{Tutorial: Creating and Publishing a LabVIEW Web Service to the Application Web Server (Real-Time, Windows)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb \url{https://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html%7D
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

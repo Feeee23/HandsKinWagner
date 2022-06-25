@@ -153,10 +153,83 @@ Die heutzutage erhältlichen Biegesensoren sind wesenlicht preiswerter als die e
 
 \subsection{Image Processing}
 Mithilfe des Einsatzes von moderner Bildverarbeitung und künstlicher Intelligenz lassen sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die benötigten Investitionen nahe Null. Lediglich ein PC sowei eine passende Webcam sind bereits aussreichen um die Positionserkennung zu ermöglichen. Ausserdem fallen umständliches an und abziehen eines sensiblne Handschuhes so wie der damit verbundene verkabelungs Aufwand weg.
-
+\subsection{Entscheidung}
 \section{Umsetzung des Konzepts}
 \emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
-Konzept Auswahl
+\subsection{HTTP code}
+\subsection{LabVIEW}
+\todo{Bildverlinkungen}
+Für die Roboterhand wird derzeit eine Steuerung in LabVIEW von einem anderen Team entwickelt. 
+Deshalb müssen die erfassten Daten nach LabVIEW übertragen werden. Hierfür wird mit LabVIEW ein lokaler Server Programmiert, welcher von der Weboberfläche per GET-Request angesprochen wird und die entsprechenden Daten übertragen bekommt \cite{NIwebserverTutorial}.
+Das angelegte LabVIEW Projekt besteht aus dem WebServerHand und den \\SharedVariables.lvlib (Abbildung \ref{fig:ProjektExplorer}).
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=7cm]{Bilder/ProjektExplorer.png}
+		\label{fig:ProjektExplorer}
+		\caption{Übersicht der Dateien des LabVIEW Projektes}
+	\end{center}
+\end{figure}
+In dem Server ist eine GET-Methode angelegt namens GetPinchState.vi. Diese besteht aus einem User Panel (Abbildung \ref{fig:LabVIEWuserPanel}), einem Block Diagram (Abbildung \ref{fig:LabVIEWBlockDia}) und einem Connector Pane (Abbildung \ref{fig:LabVIEWConnectorPane}).
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{Bilder/UserPanel.png}
+		\label{fig:LabVIEWuserPanel}
+		\caption{Aufbau des User Panels in der GET-Methode des LabVIEW Servers}
+	\end{center}
+\end{figure}  
+In dem User Panel ist der Block LabVIEW Web Service Request angelegt über diesen kommt der GET Request in LabVIEW an.
+Des Weiteren sind für jeden der vier gemessenen Finger ein Numeric Control Panel angelegt. Diese sollen den aktuellen Stand der Finger anzeigen.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{Bilder/BlockDiagram.png}
+		\label{fig:LabVIEWBlockDia}
+		\caption{Aufbau des Block Diagrams in der GET-Methode des LabVIEW Servers}
+	\end{center}
+\end{figure}
+Die beschrieben Blöcke im User Panel werden im Block Diagram miteinander logisch verbunden.
+Der Block LabVIEW Web Service Request und ein Query String sind mit dem eigentlichen Server verbunden. Die einzelnen Finger müssen nicht mit dem Server verbunden werden, sie erhalten Ihre Daten durch die Verknüpfung im Connector Pane.
+Damit die Werte der Finger außerhalb des Servers verwendet werden können, sind diese mit einer Shared Variable Node verbunden. Somit wird der jeweilige Wert in die globale Variable übernommen und kann von der Ansteuerung der Roboterhand genutzt werden.  
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=5cm]{Bilder/ConnectorPane.png}
+		\label{fig:LabVIEWConnectorPane}
+		\caption{Aufbau des Connector Panes in der GET-Methode des LabVIEW Servers}
+	\end{center}
+\end{figure}  
+Im Connector Pane sind von oben nach unten die Finger 0 bis 3 als Input verknüpft (Abbildung \ref{fig:LabVIEWConnectorPane}, orange) und der LabVIEW Web Service Request (blau). 
+Dadurch gelangen die Werte an die richtigen Variablen.\\
+Mit einem Rechtsklick auf den WebServerHand im Explorer (Abbildung \ref{fig:ProjektExplorer}) kann der Server gestartet werden. Vorher sollten allerdings diese Einstellungen in der NI-Webserver-Konfiguration vorgenommen werden (Abbildung \ref{fig:EinstellungenWebServer}).
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=8cm]{Bilder/Einstellungen-StartServerNeu.png}
+		\label{fig:EinstellungenWebServer}
+		\caption{Nötige Einstellungen in der NI-Webserver-Konfiguration}
+	\end{center}
+\end{figure}
+Sind diese Einstellungen vorgenommen und der Server gestartet, so kann über einen Rechtsklick auf die GetPinchState.vi (Abbildung \ref{fig:ProjektExplorer}) die Methoden-URL angezeigt werden (Abbildung \ref{fig:HTTPMethod})
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Bilder/HTTPMethod.png}
+		\label{fig:HTTPMethod}
+		\caption{URL des HTTP-GET Servers}
+	\end{center}
+\end{figure}
+Zur Nutzung des Webservers muss Lediglich diese URL in einen Browser eingefügt werden und \glqq \{value\}\grqq\ durch einen Wert ersetzt werden.
+Anstelle der angegeben IP-Adresse kann auch \glqq localhost\grqq angegeben werde wenn der Browser und der Server sich auf dem selben PC befinden.
+Möchte man den Server auf einem anderen PC laufen lassen, so muss die IP-Adresse durch die des PC's im Netzwerk ersetzt werden.
+\subsection{Demonstration}
+In dem angehängtem Video (Anhang 3, Demo.mp4), ist auf der linken Seite das User Panel des LabVIEW Webserver zu sehen und auf der rechten Seite die Weboberfläche (Abbildung \ref{fig:ScreenshotVideo}).
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{Bilder/ScreenshotVideo.png}
+		\label{fig:ScreenshotVideo}
+		\caption{Screenshot aus dem Demovideo im Anhang}
+	\end{center}
+\end{figure}
+Es ist im Videofeed rechts zu erkennen das sich der Mittelfinger und der Daumen berühren. In der Tabelle darunter sieht man das in der Weboberfläche erkannt wurde, dass sich nur diese Finger berühren.
+In dem User Panel links ist zu sehen, dass lediglich bei Finger 1 der Wert von 0 auf 1 geändert wurde. Die Berührung wurde also korrekt erkannt und an LabVIEW übermittelt.\\
+Das Demonstrationsvideo lässt den Prozess etwas langsam und verzögert wirken. Dies liegt allerdings nur daran das der Testrechner mit einer schwachen und über 10 Jahren alten CPU ausgestattet ist und gleichzeitig den Bildschirm aufzeichnet. 
+Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich schneller. 
 \section{Fazit}
 \emph{Diskussion (Interpretation und Beurteilung der Ergebnisse)}
 \section{Ausblick}
@@ -170,6 +243,10 @@ Konzept Auswahl
 \section*{Anhang} \sectionmark{Anhang}
 \addcontentsline{toc}{section}{Anhang} %Fügt den Anhang zum Inhaltsverzeichnis hinzu
 \begin{enumerate}
-	\item Code für Ansteuerung Klemmgreifer \& Magnetgreifer
+	\item Code für die Website \_\_\_.html
+	\item Code des LabVIEW-Projektes \_\_\_
+	\item Demonstrations Video Demo.mp4
 \end{enumerate}
+\newpage
+
 \end{document}
