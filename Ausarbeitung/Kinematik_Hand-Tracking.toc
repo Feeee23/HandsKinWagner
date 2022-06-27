@@ -1,17 +1,18 @@
 \babel@toc {ngerman}{}\relax 
+\contentsline {section}{Selbstst^^c3^^a4ndigkeitserkl^^c3^^a4rung}{I}{section*.2}%
 \contentsline {section}{Abbildungsverzeichnis und Tabellenverzeichnis}{III}{section*.4}%
 \contentsline {section}{\numberline {1}Einleitung }{1}{section.1}%
-\contentsline {section}{\numberline {2}Stand der Technik}{1}{section.2}%
-\contentsline {section}{\numberline {3}M^^c3^^b6gliche Konzepte}{1}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Bautenz^^c3^^bcge ^^c3^^bcber Finger}{1}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Biegesensoren DMS}{1}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Image Processing}{2}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Entscheidung}{2}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Umsetzung des Konzepts}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}HTTP code}{2}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}LabVIEW}{2}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Demonstration}{6}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Fazit}{6}{section.5}%
-\contentsline {section}{\numberline {6}Ausblick}{6}{section.6}%
+\contentsline {section}{\numberline {2}Stand der Technik}{2}{section.2}%
+\contentsline {section}{\numberline {3}M^^c3^^b6gliche Konzepte}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Bowdenzug ^^c3^^bcber Finger}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Biegesensoren DMS}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Image Processing}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Entscheidung}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Umsetzung des Konzepts}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}HTTP code}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}LabVIEW}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Demonstration}{9}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Fazit}{11}{section.5}%
+\contentsline {section}{\numberline {6}Ausblick}{12}{section.6}%
 \contentsline {section}{Literaturverzeichnis}{A}{section*.8}%
 \contentsline {section}{Anhang}{B}{section*.10}%

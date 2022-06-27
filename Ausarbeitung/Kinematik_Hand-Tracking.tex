@@ -97,7 +97,7 @@
 \pagenumbering{Roman}
 \markboth{Selbstständigkeitserklärung}{}
 \section*{Selbstständigkeitserklärung}
-%\addcontentsline{toc}{section}{Selbstständigkeitserklärung} %Fügt das zum Inhaltsverzeichnis hinzu,
+\addcontentsline{toc}{section}{Selbstständigkeitserklärung} %Fügt das zum Inhaltsverzeichnis hinzu,
 Wir versicheren hiermit, dass wir die Projektarbeit mit dem Thema: \glqq Entwicklung und Umsetzung einer intuitiven Steuerung für eine Roboterhand durch Erfassen
 der Geste einer menschlichen Hand \grqq\ , selbst\-ständ\-ig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben.\vspace{2.5cm}
 \begin{longtable}{p{5.5cm} p{3cm} p{6cm}}
@@ -129,8 +129,16 @@ der Geste einer menschlichen Hand \grqq\ , selbst\-ständ\-ig verfasst und keine
 \section[Einleitung ]{Einleitung} \sectionmark{Einleitung}
 Alles das \emph{so geschrieben ist, } ist von der Laboreinleitung\\
 \emph{Einführung, Motivation}
-
-
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[height=8cm]{Bilder/RoboHandVorne.png}
+		\vspace{0.5cm}
+		\includegraphics[height=8cm]{Bilder/RoboHandHinten.png}
+		\label{fig:RoboHand}
+		\caption{Die zu steuernde \glqq Frankfurter\grqq\ Roboter Hand}
+	\end{center}
+\end{figure}
+\newpage
 \section{Stand der Technik}
 \emph{Stand der Technik (Literatur/Patent-Recherche)}
 
@@ -144,16 +152,49 @@ Alternativ werden Handbewegungen auch mit Bewegungserkennungssystemen durch Mark
 Auch markerlose Kamerasysteme zur Bewegungserkennung existieren wie durch z.B. die Kinect Kamera ermöglicht.
 
 
-
+\newpage
 \section{Mögliche Konzepte}
 \emph{Experimental (Vorgehen/Methoden zur Konstruktion, Berechnung, Simulation)}
-\subsection{Bautenzüge über Finger}
+Ziel ist es die Bewegungen der aufzunehmen.
+Um eine ideale Lösung zu finden, werden verschiedene Lösungsmöglichkeiten skizziert und anschließend bewertet.
+Wichtig für die Bewertung sind die Genauigkeit des Systems, die Flexibilität zwischen verschiedenen Anwendern und die entstehenden Kosten. 
+\subsection{Bowdenzug über Finger}
+Die komplexe, mehrdimensionale Bewegung der Finger kann über einen Bowdenzug abgegriffen werden und in eine lineare Bewegung verwandelt werden.
+Inspiration hierzu ist die bestehende Roboter Hand (Abbildung \ref{fig:RoboHand}), welche die einzelnen Finger durch solche Bowdenzüge steuert.
+Wird diese lineare Bewegung gemessen, so kann bestimmt werden wie stark ein Finger gekrümmt wird. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{Bilder/HandPhoto1.pdf}
+		\label{fig:HandFinger}
+		\caption{Bautenzug über die Hand für die Finger}
+	\end{center}
+\end{figure}
+In Abbildung \ref{fig:HandFinger} ist zu erkennen wie ein solcher Bowdenzug (orange) für die Finger angebracht werden könnte.
+Das schwarze Objekte an der Fingerspitze ist der Befestigungspunkt des Bowdenzug, die schwarzen Kreise auf den Gelenken sind Führungen, damit der Bowdenzug nicht von den Fingern rutscht.
+Hellgrün ist die Druckfeste Hülle des Bowdenzugs welche verhindert, dass die Bewegungen des Handgelenks in die Messung des Bowdenzugs eingeht.
+Am rechten Ende des Bowdenzug befindet sich für jeden Finger ein lineares Potentiometer (dunkel Blau), welches von einer Feder in die Nullstellung zurückgezogen wird.
+Es muss für jeden zu messenden Finger ein Potentiometer angebracht werden. Durch messen des Widerstandes des Potentiometers kann die Krümmung des Fingers in ein elektrisches Signal umgewandelt werden. Hierfür würde sich zum Beispiel ein Mikrocontroller eignen. 
+Um die Punkte alle auf einer Hand zu befestigen eignet sich am Besten ein Handschuh. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=10cm]{Bilder/HandPhoto2.pdf}
+		\label{fig:HandDaumen}
+		\caption{Bautenzug über die Hand für den Daumen}
+	\end{center}
+\end{figure}
+Wird für die Messung des Daumens ähnlich vorgegangen (Abbildung \ref{fig:HandDaumen}), so werden die Messdaten wahrscheinlich wenig Aussagekraft haben.
+Geht man mit dem Daumen die einzelnen Fingerspitzen des Pinzettengriffs durch so ist die Bewegung zwischen den einzelnen Fingerknochen sehr gering. Die Bewegung findet lediglich zwischen den Hand\-wur\-zel\-knoch\-en und dem ersten Fingerknochen statt.
+Diese Bewegung liegt direkt neben der Bewegung des Handgelenks und ist schwieriger voneinander zu trennen. Des Weiteren ist die Bewegung des Daumens beim Pinzettengriff nur sehr gering weshalb  die Unterscheidung zu welcher Fingerspitze der Daumen sich bewegt schwer ist.\\
+Sind alle Bowdenzüge perfekt angebracht, so ist es theoretisch möglich in einer zukünftigen Arbeit einen Servomotor parallel zu den Potentiometer anzubringen und somit die Bowdenzüge zu spannen.
+Hierdurch könnte dem Nutzer simuliert werden, es würde sich ein Gegenstand zwischen den Fingern befinden, da eine Kraft auf die sich schließenden Finger ausgewirkt werden kann.  
 \subsection{Biegesensoren DMS}
 Die heutzutage erhältlichen Biegesensoren sind wesenlicht preiswerter als die ersten ihrer Art. Sie basieren nicht mehr auf dem Prinzip eines Lichwellenleiters sondern auf der Änderung der Leitfähigkeit von Materialien durch deren Biegung. Somit ermöglichen sie eine Einfache Möglichkeit den Gebogenheitsgrad eines einzellnen Fingers zu bestimmen. Als schwieriger erweißt sich jedoch die Positionsbestimmung des Daumens. Dieser kann sich auch unabhängig seines Biegegrades auf dem unteren Sattelgelenk in zwei Freiheitsgraden bewegen. Ein Begesensor reicht nicht um z.B. den Pinzettengriff zwischen Daumen und Zeigefinger und zwischen Daumen und Mittelfinger zu unterschieden.
 
 \subsection{Image Processing}
 Mithilfe des Einsatzes von moderner Bildverarbeitung und künstlicher Intelligenz lassen sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die benötigten Investitionen nahe Null. Lediglich ein PC sowei eine passende Webcam sind bereits aussreichen um die Positionserkennung zu ermöglichen. Ausserdem fallen umständliches an und abziehen eines sensiblne Handschuhes so wie der damit verbundene verkabelungs Aufwand weg.
 \subsection{Entscheidung}
+Bowdenzug negativ handschuh größe, Handschuh verrutscht leicht, Daumen kaum/ nicht messbar, (aufwendig), 
+\newpage
 \section{Umsetzung des Konzepts}
 \emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
 \subsection{HTTP code}
@@ -230,8 +271,10 @@ Es ist im Videofeed rechts zu erkennen das sich der Mittelfinger und der Daumen 
 In dem User Panel links ist zu sehen, dass lediglich bei Finger 1 der Wert von 0 auf 1 geändert wurde. Die Berührung wurde also korrekt erkannt und an LabVIEW übermittelt.\\
 Das Demonstrationsvideo lässt den Prozess etwas langsam und verzögert wirken. Dies liegt allerdings nur daran das der Testrechner mit einer schwachen und über 10 Jahren alten CPU ausgestattet ist und gleichzeitig den Bildschirm aufzeichnet. 
 Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich schneller. 
+\newpage
 \section{Fazit}
 \emph{Diskussion (Interpretation und Beurteilung der Ergebnisse)}
+\newpage
 \section{Ausblick}
 \emph{Zusammenfassung und Ausblick (Vorschläge für weiterführende Arbeiten)}
 \newpage
