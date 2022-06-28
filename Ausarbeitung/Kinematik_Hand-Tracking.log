@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.5.28)  27 JUN 2022 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.28)  28 JUN 2022 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **"/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/Kinematik_Hand-Tracking.tex"
 (/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/Kinematik_Hand-Tracking.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-29> (/home/felix/.miktex/texmfs/install/tex/latex/base/article.cls
+LaTeX2e <2022-06-01> patch level 3
+L3 programming layer <2022-06-16> (/home/felix/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/home/felix/.miktex/texmfs/install/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -27,7 +27,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 ) (/home/felix/.miktex/texmfs/install/tex/latex/lm/lmodern.sty
-Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
@@ -67,7 +67,7 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/home/felix/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/home/felix/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 ) (/home/felix/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -89,7 +89,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
  (/home/felix/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/felix/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/home/felix/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
  (/home/felix/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 ) (/home/felix/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
@@ -105,9 +105,9 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
 Package: todonotes 2021/06/04
  (/home/felix/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/home/felix/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/home/felix/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex (/home/felix/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
@@ -115,26 +115,27 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@depth=\count196
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/home/felix/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (/home/felix/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+ (/home/felix/.miktex/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/home/felix/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty (/home/felix/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty (/home/felix/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty (/home/felix/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen149
 \pgfutil@tempdimb=\dimen150
  (/home/felix/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box50
+\pgfutil@abb=\box51
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/felix/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
@@ -186,7 +187,7 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/home/felix/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex (/home/felix/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/felix/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen161
 \pgfmath@count=\count270
-\pgfmath@box=\box51
+\pgfmath@box=\box52
 \pgfmath@toks=\toks29
 \pgfmath@stack@operand=\toks30
 \pgfmath@stack@operation=\toks31
@@ -218,9 +219,9 @@ File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@start@additional=\dimen179
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box52
-\pgf@hbox=\box53
-\pgf@layerbox@main=\box54
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
 \pgf@picture@serial@count=\count272
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -248,7 +249,7 @@ File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/home/felix/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box55
+\pgfexternal@startupbox=\box56
 )) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -259,7 +260,7 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box56
+\pgfnodeparttextbox=\box57
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/felix/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
@@ -290,10 +291,10 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen196
 \tikzleveldistance=\dimen197
 \tikzsiblingdistance=\dimen198
-\tikz@figbox=\box57
-\tikz@figbox@bg=\box58
-\tikz@tempbox=\box59
-\tikz@tempbox@bg=\box60
+\tikz@figbox=\box58
+\tikz@figbox@bg=\box59
+\tikz@tempbox=\box60
+\tikz@tempbox@bg=\box61
 \tikztreelevel=\count276
 \tikznumberofchildren=\count277
 \tikznumberofcurrentchild=\count278
@@ -338,9 +339,9 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count288
 \float@exts=\toks35
-\float@box=\box61
+\float@box=\box62
 \@float@everytoks=\toks36
-\@floatcapt=\box62
+\@floatcapt=\box63
 ) (/home/felix/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen259
@@ -368,18 +369,18 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTpost=\skip55
 \LTchunksize=\count293
 \LTcapwidth=\dimen272
-\LT@head=\box63
-\LT@firsthead=\box64
-\LT@foot=\box65
-\LT@lastfoot=\box66
-\LT@gbox=\box67
+\LT@head=\box64
+\LT@firsthead=\box65
+\LT@foot=\box66
+\LT@lastfoot=\box67
+\LT@gbox=\box68
 \LT@cols=\count294
 \LT@rows=\count295
 \c@LT@tables=\count296
 \c@LT@chunks=\count297
 \LT@p@ftn=\toks37
 ) (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
+Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
@@ -393,24 +394,34 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen274
 ) (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count298
 LaTeX Info: Redefining \frac on input line 234.
 \uproot@=\count299
 \leftroot@=\count300
 LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
 \classnum@=\count301
 \DOTSCASE@=\count302
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box68
-\strutbox@=\box69
+\Mathstrutbox@=\box69
+\strutbox@=\box70
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen275
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count303
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
 \c@MaxMatrixCols=\count304
 \dotsspace@=\muskip16
 \c@parentequation=\count305
@@ -430,8 +441,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \multlinegap=\skip57
 \multlinetaggap=\skip58
 \mathdisplay@stack=\toks42
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 ) (/home/felix/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip59
@@ -439,10 +450,10 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip60
 \bigstrutjot=\dimen282
 ) (/home/felix/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2022-05-03 v3.1.1 A comprehensive (SI) units package
+Package: siunitx 2022-06-22 v3.1.4 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen283
-\l__siunitx_angle_marker_box=\box70
-\l__siunitx_angle_unit_box=\box71
+\l__siunitx_angle_marker_box=\box71
+\l__siunitx_angle_unit_box=\box72
 \l__siunitx_compound_count_int=\count311
  (/home/felix/.miktex/texmfs/install/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
@@ -467,27 +478,19 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_number_group_first_int=\count317
 \l__siunitx_number_group_size_int=\count318
 \l__siunitx_number_group_minimum_int=\count319
-\l__siunitx_table_tmp_box=\box72
+\l__siunitx_table_tmp_box=\box73
 \l__siunitx_table_tmp_dim=\dimen284
 \l__siunitx_table_column_width_dim=\dimen285
-\l__siunitx_table_integer_box=\box73
-\l__siunitx_table_decimal_box=\box74
-\l__siunitx_table_before_box=\box75
-\l__siunitx_table_after_box=\box76
+\l__siunitx_table_integer_box=\box74
+\l__siunitx_table_decimal_box=\box75
+\l__siunitx_table_before_box=\box76
+\l__siunitx_table_after_box=\box77
 \l__siunitx_table_before_dim=\dimen286
 \l__siunitx_table_carry_dim=\dimen287
 \l__siunitx_unit_tmp_int=\count320
 \l__siunitx_unit_position_int=\count321
 \l__siunitx_unit_total_int=\count322
- (/home/felix/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/home/felix/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-04-29 L3 programming layer (loader) 
- (/home/felix/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count323
-\l__pdf_internal_box=\box77
-))
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-) (/home/felix/.miktex/texmfs/install/tex/latex/tools/array.sty
+ (/home/felix/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen288
 \ar@mcellbox=\box78
@@ -498,12 +501,12 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@cellbox=\box79
 )) (/home/felix/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count324
-\csq@gtype=\count325
-\csq@glevel=\count326
-\csq@qlevel=\count327
-\csq@maxlvl=\count328
-\csq@tshold=\count329
+\csq@reset=\count323
+\csq@gtype=\count324
+\csq@glevel=\count325
+\csq@qlevel=\count326
+\csq@maxlvl=\count327
+\csq@tshold=\count328
 \csq@ltx@everypar=\toks44
  (/home/felix/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -513,60 +516,61 @@ Package csquotes Info: ... configuration file loaded successfully.
  (/home/felix/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )) (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+Package: biblatex 2022/06/22 v3.18 programmable bibliographies (PK/MW)
  (/home/felix/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
  (/home/felix/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (/home/felix/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count330
+\lrq@indent=\count329
  (/home/felix/.miktex/texmfs/install/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/home/felix/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count331
-\c@listtotal=\count332
-\c@listcount=\count333
-\c@liststart=\count334
-\c@liststop=\count335
-\c@citecount=\count336
-\c@citetotal=\count337
-\c@multicitecount=\count338
-\c@multicitetotal=\count339
-\c@instcount=\count340
-\c@maxnames=\count341
-\c@minnames=\count342
-\c@maxitems=\count343
-\c@minitems=\count344
-\c@citecounter=\count345
-\c@maxcitecounter=\count346
-\c@savedcitecounter=\count347
-\c@uniquelist=\count348
-\c@uniquename=\count349
-\c@refsection=\count350
-\c@refsegment=\count351
-\c@maxextratitle=\count352
-\c@maxextratitleyear=\count353
-\c@maxextraname=\count354
-\c@maxextradate=\count355
-\c@maxextraalpha=\count356
-\c@abbrvpenalty=\count357
-\c@highnamepenalty=\count358
-\c@lownamepenalty=\count359
-\c@maxparens=\count360
-\c@parenlevel=\count361
-\blx@tempcnta=\count362
-\blx@tempcntb=\count363
-\blx@tempcntc=\count364
-\c@blx@maxsection=\count365
-\c@blx@maxsegment@0=\count366
-\blx@notetype=\count367
-\blx@parenlevel@text=\count368
-\blx@parenlevel@foot=\count369
-\c@blx@sectionciteorder@0=\count370
+\c@tabx@nest=\count330
+\c@listtotal=\count331
+\c@listcount=\count332
+\c@liststart=\count333
+\c@liststop=\count334
+\c@citecount=\count335
+\c@citetotal=\count336
+\c@multicitecount=\count337
+\c@multicitetotal=\count338
+\c@instcount=\count339
+\c@maxnames=\count340
+\c@minnames=\count341
+\c@maxitems=\count342
+\c@minitems=\count343
+\c@citecounter=\count344
+\c@maxcitecounter=\count345
+\c@savedcitecounter=\count346
+\c@uniquelist=\count347
+\c@uniquename=\count348
+\c@refsection=\count349
+\c@refsegment=\count350
+\c@maxextratitle=\count351
+\c@maxextratitleyear=\count352
+\c@maxextraname=\count353
+\c@maxextradate=\count354
+\c@maxextraalpha=\count355
+\c@abbrvpenalty=\count356
+\c@highnamepenalty=\count357
+\c@lownamepenalty=\count358
+\c@maxparens=\count359
+\c@parenlevel=\count360
+\blx@tempcnta=\count361
+\blx@tempcntb=\count362
+\blx@tempcntc=\count363
+\c@blx@maxsection=\count364
+\blx@maxsegment@0=\count365
+\blx@notetype=\count366
+\blx@parenlevel@text=\count367
+\blx@parenlevel@foot=\count368
+\blx@sectionciteorder@0=\count369
+\blx@sectionciteorderinternal@0=\count370
 \blx@entrysetcounter=\count371
 \blx@biblioinstance=\count372
 \labelnumberwidth=\skip63
@@ -586,7 +590,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+File: blx-dm.def 2022/06/22 v3.18 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
@@ -677,12 +681,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+File: blx-compat.def 2022/06/22 v3.18 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+File: biblatex.def 2022/06/22 v3.18 biblatex compatibility (PK/MW)
 \c@textcitecount=\count444
 \c@textcitetotal=\count445
 \c@textcitemaxnames=\count446
@@ -700,22 +704,22 @@ File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+File: numeric-comp.bbx 2022/06/22 v3.18 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+File: numeric.bbx 2022/06/22 v3.18 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+File: standard.bbx 2022/06/22 v3.18 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count453
 \c@bbx:relatedtotal=\count454
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+File: numeric-comp.cbx 2022/06/22 v3.18 biblatex citation style (PK/MW)
 \c@cbx@tempcnta=\count455
 \c@cbx@tempcntb=\count456
 \c@cbx@tempcntc=\count457
@@ -739,22 +743,29 @@ File: biblatex.cfg
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
+ (/home/felix/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-06-16 L3 programming layer (loader) 
+ (/home/felix/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count459
+\l__pdf_internal_box=\box80
+))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-04-29 L3 programming layer (loader) 
+(biblatex)             2022-06-16 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty (/home/felix/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
+Package: xparse 2022-06-22 L3 Experimental document command parser
 )
-Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+Package: blx-case-expl3 2022/06/22 v3.18 expl3 case changing code for biblatex
 )) (/home/felix/.miktex/texmfs/install/tex/generic/babel/babel.sty
-Package: babel 2022/04/30 3.74 The Babel package
-\babel@savecnt=\count459
+Package: babel 2022/06/06 3.76 The Babel package
+\babel@savecnt=\count460
 \U@D=\dimen290
 \l@unhyphenated=\language2
  (/home/felix/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count460
+\bbl@dirlevel=\count461
 
 *************************************
 * Local config file bblopts.cfg used
@@ -776,8 +787,14 @@ Package babel Warning: No hyphenation patterns were preloaded for
 (babel)                preloaded for \language=0 instead on input line 48.
 
 Package babel Info: Making " an active character on input line 122.
-))) (/home/felix/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+))) (/home/felix/.miktex/texmfs/install/tex/generic/babel/locale/de/babel-ngerman.tex (/home/felix/.miktex/texmfs/install/tex/generic/babel/locale/de/babel-german.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+)) (/home/felix/.miktex/texmfs/install/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/home/felix/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
  (/home/felix/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen291
@@ -787,17 +804,17 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pageheight=\dimen294
 \AM@fboxrule=\dimen295
  (/home/felix/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count461
-\AM@pagebox=\box80
+\pdfpages@includegraphics@status=\count462
+\AM@pagebox=\box81
 \AM@global@opts=\toks45
-\AM@pagecnt=\count462
+\AM@pagecnt=\count463
 \AM@toc@title=\toks46
-\c@AM@survey=\count463
-\AM@templatesizebox=\box81
+\c@AM@survey=\count464
+\AM@templatesizebox=\box82
 ) (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
  (/home/felix/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (/home/felix/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
@@ -808,12 +825,20 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/home/felix/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (/home/felix/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/home/felix/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count465
 )
 \@linkdim=\dimen296
-\Hy@linkcounter=\count464
-\Hy@pagecounter=\count465
+\Hy@linkcounter=\count466
+\Hy@pagecounter=\count467
  (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/home/felix/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
@@ -821,59 +846,57 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/home/felix/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count466
+\Hy@SavedSpaceFactor=\count468
  (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `final' set `true' on input line 4018.
-Package hyperref Info: Option `pdfusetitle' set `true' on input line 4018.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4018.
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Option `final' set `true' on input line 4045.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4045.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count467
-LaTeX Info: Redefining \url on input line 4749.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count469
+LaTeX Info: Redefining \url on input line 4746.
 \XeTeXLinkMargin=\dimen297
  (/home/felix/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/home/felix/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count468
+\Fld@menulength=\count470
 \Field@Width=\dimen298
 \Fld@charsize=\dimen299
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring ON on input line 6045.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring ON on input line 6042.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
  (/home/felix/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count469
-\c@Item=\count470
-\c@Hfootnote=\count471
+\Hy@abspage=\count471
+\c@Item=\count472
+\c@Hfootnote=\count473
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
  (/home/felix/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count472
-\c@bookmark@seq@number=\count473
+\Fld@listcount=\count474
+\c@bookmark@seq@number=\count475
  (/home/felix/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/home/felix/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
@@ -883,29 +906,29 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip85
 ) (/home/felix/.miktex/texmfs/install/tex/latex/listings/listings.sty
-\lst@mode=\count474
-\lst@gtempboxa=\box82
+\lst@mode=\count476
+\lst@gtempboxa=\box83
 \lst@token=\toks47
-\lst@length=\count475
+\lst@length=\count477
 \lst@currlwidth=\dimen300
-\lst@column=\count476
-\lst@pos=\count477
+\lst@column=\count478
+\lst@pos=\count479
 \lst@lostspace=\dimen301
 \lst@width=\dimen302
-\lst@newlines=\count478
-\lst@lineno=\count479
+\lst@newlines=\count480
+\lst@lineno=\count481
 \lst@maxwidth=\dimen303
  (/home/felix/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count480
-\lst@skipnumbers=\count481
-\lst@framebox=\box83
+\c@lstnumber=\count482
+\lst@skipnumbers=\count483
+\lst@framebox=\box84
 ) (/home/felix/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (/home/felix/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
 \f@nch@headwidth=\skip86
 \f@nch@O@elh=\skip87
 \f@nch@O@erh=\skip88
@@ -922,7 +945,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 65.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (Kinematik_Hand-Tracking.aux)
 \openout1 = `Kinematik_Hand-Tracking.aux'.
 
@@ -962,7 +985,7 @@ LaTeX Font Info:    ... okay on input line 65.
 * \oddsidemargin=1.70734pt
 * \evensidemargin=1.70734pt
 * \topmargin=-23.91173pt
-* \headheight=28.0pt
+* \headheight=33.1pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -981,16 +1004,16 @@ LaTeX Font Info:    ... okay on input line 65.
 
 (/home/felix/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count482
+\scratchcounter=\count484
 \scratchdimen=\dimen304
-\scratchbox=\box84
-\nofMPsegments=\count483
-\nofMParguments=\count484
+\scratchbox=\box85
+\nofMPsegments=\count485
+\nofMParguments=\count486
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count485
+\MPscratchCnt=\count487
 \MPscratchDim=\dimen305
-\MPnumerator=\count486
-\makeMPintoPDFobject=\count487
+\MPnumerator=\count488
+\makeMPintoPDFobject=\count489
 \everyMPtoPDFconversion=\toks49
 ) (/home/felix/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1012,21 +1035,21 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/lbx/ngerman.lbx
-File: ngerman.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+File: ngerman.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+File: german.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+File: german.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+File: english.lbx 2022/06/22 v3.18 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1046,66 +1069,35 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package hyperref Info: Link coloring ON on input line 65.
- (/home/felix/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (/home/felix/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/home/felix/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count488
-)
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
  (Kinematik_Hand-Tracking.out) (Kinematik_Hand-Tracking.out)
 \@outlinefile=\write5
 \openout5 = `Kinematik_Hand-Tracking.out'.
 
-\c@lstlisting=\count489
+\c@lstlisting=\count490
 <Bilder/logo.pdf, id=74, 255.30925pt x 103.15169pt>
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
 Package pdftex.def Info: Bilder/logo.pdf  used on input line 69.
 (pdftex.def)             Requested size: 227.62204pt x 91.96838pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 91.
-
-Overfull \hbox (86.77092pt too wide) in paragraph at lines 91--91
-[][][]\OT1/lmr/m/n/12 Bearbeitungszeitraum[]  
- []
-
-
-Overfull \hbox (86.77092pt too wide) in paragraph at lines 91--91
-[][][]\OT1/lmr/m/n/12 Bearbeitungszeitraum[]  
- []
-
-[0
+ [0
 
 {/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./Bilder/logo.pdf>]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
 Package pdftex.def Info: Bilder/logo.pdf  used on input line 115.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[1] (Kinematik_Hand-Tracking.toc
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [1] (Kinematik_Hand-Tracking.toc
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 7.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 7.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 7.
@@ -1120,16 +1112,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
 Package pdftex.def Info: Bilder/logo.pdf  used on input line 122.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[2] (Kinematik_Hand-Tracking.lof)
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [2] (Kinematik_Hand-Tracking.lof)
 \tf@lof=\write7
 \openout7 = `Kinematik_Hand-Tracking.lof'.
 
@@ -1140,398 +1124,280 @@ Package fancyhdr Warning: \headheight is too small (28.0pt):
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
 Package pdftex.def Info: Bilder/logo.pdf  used on input line 127.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[3]
-<Bilder/RoboHandVorne.png, id=141, 469.755pt x 650.43pt>
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [3]
+<Bilder/RoboHandVorne.png, id=144, 469.755pt x 650.43pt>
 File: Bilder/RoboHandVorne.png Graphic file (type png)
 <use Bilder/RoboHandVorne.png>
-Package pdftex.def Info: Bilder/RoboHandVorne.png  used on input line 134.
+Package pdftex.def Info: Bilder/RoboHandVorne.png  used on input line 137.
 (pdftex.def)             Requested size: 164.3952pt x 227.62204pt.
-<Bilder/RoboHandHinten.png, id=142, 445.665pt x 646.415pt>
+<Bilder/RoboHandHinten.png, id=145, 445.665pt x 646.415pt>
 File: Bilder/RoboHandHinten.png Graphic file (type png)
 <use Bilder/RoboHandHinten.png>
-Package pdftex.def Info: Bilder/RoboHandHinten.png  used on input line 136.
+Package pdftex.def Info: Bilder/RoboHandHinten.png  used on input line 139.
 (pdftex.def)             Requested size: 156.93033pt x 227.62204pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 141.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[1 <./Bilder/RoboHandVorne.png> <./Bilder/RoboHandHinten.png>]
-Overfull \hbox (4.65414pt too wide) in paragraph at lines 145--147
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 148.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [1 <./Bilder/RoboHandVorne.png> <./Bilder/RoboHandHinten.png>]
+Overfull \hbox (4.65414pt too wide) in paragraph at lines 152--154
 \OT1/lmr/m/n/12 Aufwand erfassen. Und eine Steuerung mittels Joysticks o.[]a. ist ungeeignet. Erste Versuche
  []
 
 
-Overfull \hbox (8.86108pt too wide) in paragraph at lines 145--147
-\OT1/lmr/m/n/12 eingebauten Biegesensoren [[][]1[][]] und Lagesensoren durchgef[]uhrt. Die zu dieser Zeit boomende
+Overfull \hbox (8.86108pt too wide) in paragraph at lines 152--154
+\OT1/lmr/m/n/12 eingebauten Biegesensoren [[][]4[][]] und Lagesensoren durchgef[]uhrt. Die zu dieser Zeit boomende
  []
 
 
-Overfull \hbox (0.14278pt too wide) in paragraph at lines 145--147
+Overfull \hbox (0.14278pt too wide) in paragraph at lines 152--154
 \OT1/lmr/m/n/12 Computerspielindustrie griff die Idee schnell auf und brachte den, technisch vereinfachten,
  []
 
 
-Overfull \hbox (3.80667pt too wide) in paragraph at lines 145--147
-\OT1/lmr/m/n/12 PowerGlove [[][]2[][]] auf den Markt. Heute sind verschiedene Firmen im Markt die professionelle
+Overfull \hbox (3.80667pt too wide) in paragraph at lines 152--154
+\OT1/lmr/m/n/12 PowerGlove [[][]5[][]] auf den Markt. Heute sind verschiedene Firmen im Markt die professionelle
  []
 
 
-Overfull \hbox (53.32391pt too wide) in paragraph at lines 148--149
+Overfull \hbox (53.32391pt too wide) in paragraph at lines 155--156
 \OT1/lmr/m/n/12 Abziehvorgan ist umst[]andlich, die Gr[]o^^Ye des Handschuhes muss stimmen, Desinfektionsma^^Ynahmen
  []
 
 
-Overfull \hbox (15.30775pt too wide) in paragraph at lines 150--151
+Overfull \hbox (15.30775pt too wide) in paragraph at lines 157--158
 []\OT1/lmr/m/n/12 Alternativ werden Handbewegungen auch mit Bewegungserkennungssystemen durch Marker
  []
 
 
-Overfull \hbox (41.84473pt too wide) in paragraph at lines 150--151
+Overfull \hbox (41.84473pt too wide) in paragraph at lines 157--158
 \OT1/lmr/m/n/12 und IR-Kamerasystemen aufgezeichnet. []Uber Triangolie die Position der einzellnen Markerpunkte
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 155.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 162.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [2]
-<Bilder/HandPhoto1.pdf, id=161, 360.34625pt x 164.615pt>
+<Bilder/HandPhoto1.pdf, id=167, 360.34625pt x 164.615pt>
 File: Bilder/HandPhoto1.pdf Graphic file (type pdf)
 <use Bilder/HandPhoto1.pdf>
-Package pdftex.def Info: Bilder/HandPhoto1.pdf  used on input line 167.
+Package pdftex.def Info: Bilder/HandPhoto1.pdf  used on input line 174.
 (pdftex.def)             Requested size: 284.52756pt x 129.97911pt.
 
 
 pdfTeX warning: pdflatex (file ./Bilder/HandPhoto2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Bilder/HandPhoto2.pdf, id=163, 335.50255pt x 188.72017pt>
+<Bilder/HandPhoto2.pdf, id=169, 335.50255pt x 188.72017pt>
 File: Bilder/HandPhoto2.pdf Graphic file (type pdf)
 <use Bilder/HandPhoto2.pdf>
-Package pdftex.def Info: Bilder/HandPhoto2.pdf  used on input line 180.
+Package pdftex.def Info: Bilder/HandPhoto2.pdf  used on input line 187.
 (pdftex.def)             Requested size: 284.52756pt x 160.04716pt.
 
-Overfull \hbox (29.16154pt too wide) in paragraph at lines 172--184
+Overfull \hbox (29.16154pt too wide) in paragraph at lines 179--191
 \OT1/lmr/m/n/12 angebracht werden k[]onnte. Das schwarze Objekte an der Fingerspitze ist der Befestigungspunkt
  []
 
 
-Overfull \hbox (13.25706pt too wide) in paragraph at lines 172--184
+Overfull \hbox (13.25706pt too wide) in paragraph at lines 179--191
 \OT1/lmr/m/n/12 Bowdenzug nicht von den Fingern rutscht. Hellgr[]un ist die Druckfeste H[]ulle des Bowdenzugs
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 185.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 192.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [3 <./Bilder/HandPhoto1.pdf>]
-Overfull \hbox (23.92877pt too wide) in paragraph at lines 185--190
+Overfull \hbox (23.92877pt too wide) in paragraph at lines 192--197
 \OT1/lmr/m/n/12 ist die Bewegung des Daumens beim Pinzettengriff nur sehr gering weshalb die Unterscheidung
  []
 
 
-Overfull \hbox (4.22403pt too wide) in paragraph at lines 185--190
+Overfull \hbox (4.22403pt too wide) in paragraph at lines 192--197
 \OT1/lmr/m/n/12 Sind alle Bowdenz[]uge perfekt angebracht, so ist es theoretisch m[]oglich in einer zuk[]unftigen
  []
 
 
-Overfull \hbox (27.35822pt too wide) in paragraph at lines 185--190
+Overfull \hbox (27.35822pt too wide) in paragraph at lines 192--197
 \OT1/lmr/m/n/12 Arbeit einen Servomotor parallel zu den Potentiometer anzubringen und somit die Bowdenz[]uge
  []
 
 
-Overfull \hbox (0.61719pt too wide) in paragraph at lines 185--190
+Overfull \hbox (0.61719pt too wide) in paragraph at lines 192--197
 \OT1/lmr/m/n/12 zu spannen. Hierdurch k[]onnte dem Nutzer simuliert werden, es w[]urde sich ein Gegenstand
  []
 
 
-Overfull \hbox (20.76869pt too wide) in paragraph at lines 191--192
+Overfull \hbox (20.76869pt too wide) in paragraph at lines 198--199
 \OT1/lmr/m/n/12 sich auch unabh[]angig seines Biegegrades auf dem unteren Sattelgelenk in zwei Freiheitsgraden
  []
 
 
-Overfull \hbox (9.97203pt too wide) in paragraph at lines 194--195
+Overfull \hbox (9.97203pt too wide) in paragraph at lines 201--202
 \OT1/lmr/m/n/12 sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die ben[]otigten
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 195.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [4 <./Bilder/HandPhoto2.pdf>]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 197.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 204.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-
-Overfull \hbox (61.24849pt too wide) in paragraph at lines 202--202
-[][][]\OT1/lmr/m/n/12 Bildverlinkungen[]  
- []
-
-
-Overfull \hbox (61.24849pt too wide) in paragraph at lines 202--202
-[][][]\OT1/lmr/m/n/12 Bildverlinkungen[]  
- []
-
-<Bilder/ProjektExplorer.png, id=189, 280.04625pt x 326.4195pt>
+<Bilder/ProjektExplorer.png, id=195, 280.04625pt x 326.4195pt>
 File: Bilder/ProjektExplorer.png Graphic file (type png)
 <use Bilder/ProjektExplorer.png>
-Package pdftex.def Info: Bilder/ProjektExplorer.png  used on input line 208.
+Package pdftex.def Info: Bilder/ProjektExplorer.png  used on input line 214.
 (pdftex.def)             Requested size: 199.16928pt x 232.15791pt.
 
-Overfull \hbox (12.74751pt too wide) in paragraph at lines 203--212
+Overfull \hbox (12.74751pt too wide) in paragraph at lines 209--218
 \OT1/lmr/m/n/12 Hierf[]ur wird mit LabVIEW ein lokaler Server Programmiert, welcher von der Weboberfl[]ache
  []
 
 
-Overfull \hbox (0.31711pt too wide) in paragraph at lines 203--212
+Overfull \hbox (0.31711pt too wide) in paragraph at lines 209--218
 \OT1/lmr/m/n/12 per GET-Request angesprochen wird und die entsprechenden Daten []ubertragen bekommt
  []
 
-<Bilder/UserPanel.png, id=193, 640.794pt x 396.2805pt>
+<Bilder/UserPanel.png, id=199, 640.794pt x 396.2805pt>
 File: Bilder/UserPanel.png Graphic file (type png)
 <use Bilder/UserPanel.png>
-Package pdftex.def Info: Bilder/UserPanel.png  used on input line 216.
+Package pdftex.def Info: Bilder/UserPanel.png  used on input line 222.
 (pdftex.def)             Requested size: 284.52756pt x 175.9603pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 221.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 227.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [6 <./Bilder/ProjektExplorer.png>]
-<Bilder/BlockDiagram.png, id=200, 517.33275pt x 387.24675pt>
+<Bilder/BlockDiagram.png, id=205, 517.33275pt x 387.24675pt>
 File: Bilder/BlockDiagram.png Graphic file (type png)
 <use Bilder/BlockDiagram.png>
-Package pdftex.def Info: Bilder/BlockDiagram.png  used on input line 225.
+Package pdftex.def Info: Bilder/BlockDiagram.png  used on input line 231.
 (pdftex.def)             Requested size: 284.52756pt x 212.98636pt.
 
-Overfull \hbox (5.65302pt too wide) in paragraph at lines 221--229
+Overfull \hbox (5.65302pt too wide) in paragraph at lines 227--235
 \OT1/lmr/m/n/12 kommt der GET Request in LabVIEW an. Des Weiteren sind f[]ur jeden der vier gemessenen
  []
 
-<Bilder/ConnectorPane.png, id=201, 51.19125pt x 30.1125pt>
+<Bilder/ConnectorPane.png, id=206, 51.19125pt x 30.1125pt>
 File: Bilder/ConnectorPane.png Graphic file (type png)
 <use Bilder/ConnectorPane.png>
-Package pdftex.def Info: Bilder/ConnectorPane.png  used on input line 235.
+Package pdftex.def Info: Bilder/ConnectorPane.png  used on input line 241.
 (pdftex.def)             Requested size: 142.26378pt x 83.6904pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 239.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 245.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [7 <./Bilder/UserPanel.png> <./Bilder/BlockDiagram.png>]
-<Bilder/Einstellungen-StartServerNeu.png, id=209, 442.0515pt x 428.19975pt>
+<Bilder/Einstellungen-StartServerNeu.png, id=214, 442.0515pt x 428.19975pt>
 File: Bilder/Einstellungen-StartServerNeu.png Graphic file (type png)
 <use Bilder/Einstellungen-StartServerNeu.png>
-Package pdftex.def Info: Bilder/Einstellungen-StartServerNeu.png  used on input line 245.
+Package pdftex.def Info: Bilder/Einstellungen-StartServerNeu.png  used on input line 251.
 (pdftex.def)             Requested size: 227.62204pt x 220.4894pt.
 
-Overfull \hbox (6.12978pt too wide) in paragraph at lines 240--249
-\OT1/lmr/m/n/12 (Abbildung [][]4.2[][], orange) und der LabVIEW Web Service Request (blau). Dadurch gelangen
+Overfull \hbox (6.12978pt too wide) in paragraph at lines 246--255
+\OT1/lmr/m/n/12 (Abbildung [][]4.4[][], orange) und der LabVIEW Web Service Request (blau). Dadurch gelangen
  []
 
 
-Overfull \hbox (4.34198pt too wide) in paragraph at lines 240--249
+Overfull \hbox (4.34198pt too wide) in paragraph at lines 246--255
 \OT1/lmr/m/n/12 Server gestartet werden. Vorher sollten allerdings diese Einstellungen in der NI-Webserver-
  []
 
-<Bilder/HTTPMethod.png, id=212, 450.483pt x 159.59625pt>
+<Bilder/HTTPMethod.png, id=217, 450.483pt x 159.59625pt>
 File: Bilder/HTTPMethod.png Graphic file (type png)
 <use Bilder/HTTPMethod.png>
-Package pdftex.def Info: Bilder/HTTPMethod.png  used on input line 253.
+Package pdftex.def Info: Bilder/HTTPMethod.png  used on input line 259.
 (pdftex.def)             Requested size: 341.43306pt x 120.96564pt.
 
-Overfull \hbox (7.83987pt too wide) in paragraph at lines 250--257
-\OT1/lmr/m/n/12 Rechtsklick auf die GetPinchState.vi (Abbildung [][]4.2[][]) die Methoden-URL angezeigt werden
+Overfull \hbox (7.83987pt too wide) in paragraph at lines 256--263
+\OT1/lmr/m/n/12 Rechtsklick auf die GetPinchState.vi (Abbildung [][]4.1[][]) die Methoden-URL angezeigt werden
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 258.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 264.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [8 <./Bilder/ConnectorPane.png> <./Bilder/Einstellungen-StartServerNeu.png>]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 258.
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 264.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: omslmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 258.
-<Bilder/ScreenshotVideo.png, id=218, 1428.33624pt x 770.88pt>
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 264.
+<Bilder/ScreenshotVideo.png, id=223, 1441.385pt x 776.9025pt>
 File: Bilder/ScreenshotVideo.png Graphic file (type png)
 <use Bilder/ScreenshotVideo.png>
-Package pdftex.def Info: Bilder/ScreenshotVideo.png  used on input line 265.
-(pdftex.def)             Requested size: 341.43306pt x 184.27393pt.
-File: Bilder/logo.pdf Graphic file (type pdf)
-<use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 274.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
+Package pdftex.def Info: Bilder/ScreenshotVideo.png  used on input line 271.
+(pdftex.def)             Requested size: 341.43306pt x 184.03021pt.
 
+Overfull \hbox (1.90477pt too wide) in paragraph at lines 268--275
+\OT1/lmr/m/n/12 User Panel des LabVIEW Webserver zu sehen und auf der rechten Seite die Weboberfl[]ache
+ []
 
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[9 <./Bilder/HTTPMethod.png> <./Bilder/ScreenshotVideo.png>]
-File: Bilder/logo.pdf Graphic file (type pdf)
-<use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 274.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[10]
-File: Bilder/logo.pdf Graphic file (type pdf)
-<use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 277.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[11]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
 Package pdftex.def Info: Bilder/logo.pdf  used on input line 280.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[12]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 284.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+[9 <./Bilder/HTTPMethod.png> <./Bilder/ScreenshotVideo.png>]
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 280.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [10]
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 283.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [11]
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 288.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [12]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 292.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (1.4784pt too wide) in paragraph at lines 285--285
+Overfull \hbox (1.4784pt too wide) in paragraph at lines 293--293
 []\OT1/lmr/m/n/12 NATIONAL INSTRUMENTS CORP. \OT1/lmr/m/it/12 Tutorial: Creating and Publishing a LabVIEW
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 285.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 293.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [1]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 293.
-(pdftex.def)             Requested size: 85.35826pt x 34.48715pt.
-
-
-Package fancyhdr Warning: \headheight is too small (28.0pt): 
-(fancyhdr)                Make it at least 38.83719pt, for example:
-(fancyhdr)                \setlength{\headheight}{38.83719pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.83719pt}.
-
-[2] (Kinematik_Hand-Tracking.aux)
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 301.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [2] (Kinematik_Hand-Tracking.aux)
 Package rerunfilecheck Info: File `Kinematik_Hand-Tracking.out' has not changed.
-(rerunfilecheck)             Checksum: 646E9BCD7136EF6CABE6AB97347F32B8;2258.
+(rerunfilecheck)             Checksum: 9FB899781230DF7F9DA5CE16BC3A1E6C;2257.
 Package logreq Info: Writing requests to 'Kinematik_Hand-Tracking.run.xml'.
 \openout1 = `Kinematik_Hand-Tracking.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36436 strings out of 480554
- 740413 string characters out of 2894975
- 1423463 words of memory out of 3000000
- 53710 multiletter control sequences out of 15000+600000
+ 36453 strings out of 480286
+ 741145 string characters out of 2888782
+ 1439465 words of memory out of 3000000
+ 53980 multiletter control sequences out of 15000+600000
  502607 words of font info for 47 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
- 99i,16n,94p,845b,2457s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,94p,833b,2457s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmtt.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmsc.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}</home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmr12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Kinematik_Hand-Tracking.pdf (18 pages, 5163498 bytes).
+Output written on Kinematik_Hand-Tracking.pdf (18 pages, 5195795 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'Kinematik_Hand-Tracking.blg'
-[44] biber:340> INFO - === Sa Jun 25, 2022, 14:41:12
-[54] Biber.pm:418> INFO - Reading 'Kinematik_Hand-Tracking.bcf'
-[98] Biber.pm:972> INFO - Found 5 citekeys in bib section 0
-[107] Biber.pm:4383> INFO - Processing section 0
-[114] Biber.pm:4574> INFO - Looking for bibtex file 'Literatur.bib' for section 0
-[115] bibtex.pm:1713> INFO - LaTeX decoding ...
-[118] bibtex.pm:1518> INFO - Found BibTeX data source 'Literatur.bib'
-[149] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[149] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[149] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[149] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
-[153] bbl.pm:654> INFO - Writing 'Kinematik_Hand-Tracking.bbl' with encoding 'UTF-8'
-[155] bbl.pm:757> INFO - Output to Kinematik_Hand-Tracking.bbl
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'Kinematik_Hand-Tracking.blg'
+[40] biber:340> INFO - === Di Jun 28, 2022, 10:49:32
+[50] Biber.pm:418> INFO - Reading 'Kinematik_Hand-Tracking.bcf'
+[95] Biber.pm:978> INFO - Found 8 citekeys in bib section 0
+[105] Biber.pm:4401> INFO - Processing section 0
+[112] Biber.pm:4592> INFO - Looking for bibtex file 'Literatur.bib' for section 0
+[114] bibtex.pm:1713> INFO - LaTeX decoding ...
+[119] bibtex.pm:1518> INFO - Found BibTeX data source 'Literatur.bib'
+[177] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[177] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[177] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[177] Biber.pm:4227> INFO - No sort tailoring available for locale 'de-DE'
+[183] bbl.pm:654> INFO - Writing 'Kinematik_Hand-Tracking.bbl' with encoding 'UTF-8'
+[186] bbl.pm:757> INFO - Output to Kinematik_Hand-Tracking.bbl

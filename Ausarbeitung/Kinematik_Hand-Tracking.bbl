@@ -19,6 +19,87 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Hesse2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=dd51491356eea0174873278d9ea5cab1}{%
+           family={Hesse},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Carl Hanser Verlag GmbH Co KG}%
+      }
+      \strng{namehash}{dd51491356eea0174873278d9ea5cab1}
+      \strng{fullhash}{dd51491356eea0174873278d9ea5cab1}
+      \strng{bibnamehash}{dd51491356eea0174873278d9ea5cab1}
+      \strng{authorbibnamehash}{dd51491356eea0174873278d9ea5cab1}
+      \strng{authornamehash}{dd51491356eea0174873278d9ea5cab1}
+      \strng{authorfullhash}{dd51491356eea0174873278d9ea5cab1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3., neu bearbeitete und er\-weit\-er\-te Auflage}
+      \field{isbn}{978-3-446-43596-4}
+      \field{title}{Grundlagen der Handhabungstechnik}
+      \field{year}{2013}
+    \endentry
+    \entry{VDI1990}{article}{}
+      \name{author}{1}{}{%
+        {{hash=07cb672666edbea014338f3519f3daa1}{%
+           family={Jansen},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{07cb672666edbea014338f3519f3daa1}
+      \strng{fullhash}{07cb672666edbea014338f3519f3daa1}
+      \strng{bibnamehash}{07cb672666edbea014338f3519f3daa1}
+      \strng{authorbibnamehash}{07cb672666edbea014338f3519f3daa1}
+      \strng{authornamehash}{07cb672666edbea014338f3519f3daa1}
+      \strng{authorfullhash}{07cb672666edbea014338f3519f3daa1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{VDI Berichte 850, Roboter in der Verpackungstechnik}
+      \field{title}{Stand und Perspektiven der Roboter in der Verpakungstechnik}
+      \field{year}{1990}
+    \endentry
+    \entry{Wolf2016}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d05f0c102d76cba75a6f98fe09d57404}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1a044b3c8658915c745b18e68edc57bd}{%
+           family={Steinmann},
+           familyi={S\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {Carl Hanser Verlag GmbH Co KG}%
+      }
+      \strng{namehash}{b8f966da4c011ff5026c47806af72098}
+      \strng{fullhash}{b8f966da4c011ff5026c47806af72098}
+      \strng{bibnamehash}{b8f966da4c011ff5026c47806af72098}
+      \strng{authorbibnamehash}{b8f966da4c011ff5026c47806af72098}
+      \strng{authornamehash}{b8f966da4c011ff5026c47806af72098}
+      \strng{authorfullhash}{b8f966da4c011ff5026c47806af72098}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-446-43993-1}
+      \field{title}{Greifer in Bewegung - Faszination der Au\-to\-ma\-ti\-sier\-ung von Handhabungsaufgaben}
+      \field{year}{2016}
+    \endentry
     \entry{FlexSensor}{article}{}
       \name{author}{1}{}{%
         {{hash=46aa5b54c7c6d0a3bd1579bf7dc44c25}{%
@@ -31,8 +112,8 @@
       \strng{authorbibnamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
       \strng{authornamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
       \strng{authorfullhash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{US 4542291}
@@ -51,8 +132,8 @@
       \strng{authorbibnamehash}{78d8cf8efb7de074975b11efdabacda5}
       \strng{authornamehash}{78d8cf8efb7de074975b11efdabacda5}
       \strng{authorfullhash}{78d8cf8efb7de074975b11efdabacda5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{1993 VR Conference Proceedings: abgerufen am 19.06.22}
@@ -73,8 +154,8 @@
       \strng{authorbibnamehash}{aa76858c9b8f06e5524bfa9246689595}
       \strng{authornamehash}{aa76858c9b8f06e5524bfa9246689595}
       \strng{authorfullhash}{aa76858c9b8f06e5524bfa9246689595}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cyber Glove Systems}
@@ -95,8 +176,8 @@
       \strng{authorbibnamehash}{283cd6eef440269b0fdab5e2510eb17a}
       \strng{authornamehash}{283cd6eef440269b0fdab5e2510eb17a}
       \strng{authorfullhash}{283cd6eef440269b0fdab5e2510eb17a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{High-End Gloves for Robotics, Animation, Virtual Reality, Medical and Bio-mechanics Research}
@@ -119,8 +200,8 @@
       \strng{authorbibnamehash}{20b93550b7f746a4a453b3de825e038f}
       \strng{authornamehash}{20b93550b7f746a4a453b3de825e038f}
       \strng{authorfullhash}{20b93550b7f746a4a453b3de825e038f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{06}

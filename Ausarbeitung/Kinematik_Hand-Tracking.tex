@@ -18,11 +18,11 @@
 			style=numeric-comp, %macht nummern aus den Quellen?!?
 			sorting=none,]{biblatex} %stell sortiern nach Namen der Autoren aus
 \DefineBibliographyStrings{ngerman}{ %macht aus u.a. -> et al.
-   andothers = {{et\,al\adddot}},
+   andothers = {{et\,al\adddot}}, 
 }
 \bibliography{Literatur.bib}  % Literatur verzeichniss
 \usepackage[english,ngerman]{babel}  % The last language in the list is the primary one.
-\usepackage{pdfpages} %zum Anhängen von PDF's (Reflexion A&B)
+\usepackage{pdfpages} %zum Anhängen von PDF's
 \usepackage[pdfusetitle, colorlinks, linkcolor=black, citecolor=black, urlcolor=gray,]{hyperref}  % Add clickable links for figures etc. Comment out for printing if desired.
 \numberwithin{equation}{section} %nummeriert Formeln mit Kapitelnummer.Formelnummer ACHTUNG! muss nach hyperref kommen.
 \numberwithin{figure}{section} %numeriert Bilder mit Kapitelnummer.Bildnummer ACHTUNG! muss nach hyperref kommen.
@@ -52,10 +52,10 @@
 
 \usepackage{fancyhdr} %Kopf/Fußzeile
 \pagestyle{fancy}
-\setlength{\headheight}{28pt}
+\setlength{\headheight}{33.1pt}
 %\setlength{\footheight}{30pt}
 \lhead{\nouppercase{\leftmark}}
-\rhead{\includegraphics[width=3cm]{Bilder/logo.pdf}}
+\rhead{\includegraphics[width=2.5cm]{Bilder/logo.pdf}}
 \lfoot{Abt \& Girke}
 \cfoot{}
 \rfoot{\thepage}
@@ -127,17 +127,24 @@ der Geste einer menschlichen Hand \grqq\ , selbst\-ständ\-ig verfasst und keine
 \newpage
 \pagenumbering{arabic}
 \section[Einleitung ]{Einleitung} \sectionmark{Einleitung}
-Alles das \emph{so geschrieben ist, } ist von der Laboreinleitung\\
-\emph{Einführung, Motivation}
+Endeffektoren sind \glqq gewöhnlich das letzte Glied der kinematischen Kette einer Hand\-hab\-ungs\-ein\-richt\-ung\grqq\ \cite[S.302]{Hesse2013}. 
+Schon früh wurde versucht mit Endeffektoren die men\-sch\-lich\-en Hand nachzubilden. Lange Zeit war diese Aufgabe zu komplex und es wurden Endeffektoren auf eine Aufgabe spezialisiert \cite[S.9]{VDI1990}.
+Aber aufgrund der technischen Fortschritte der letzten Jahrzehnte gelingt es immer besser diese Komplexität zu be\-herr\-sch\-en.
+So wurde 2013 mit der \glqq SVH 5-Finger-Hand\grqq\ die erste serienreife 5-Finger-Hand mit 9 Motoren von der Schunk GmbH \& Co. KG vorgestellt \cite[S.57]{Wolf2016}.
+Durch die Arbeit vorheriger Gruppen, ist auch an der University of Applied Sciences in Frankfurt eine Roboterhand entwickelt und gebaut worden (Abbildung \ref{fig:RoboHand}), welche sich über einen Mikrocontroller steuern lässt.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[height=8cm]{Bilder/RoboHandVorne.png}
 		\vspace{0.5cm}
 		\includegraphics[height=8cm]{Bilder/RoboHandHinten.png}
-		\label{fig:RoboHand}
 		\caption{Die zu steuernde \glqq Frankfurter\grqq\ Roboter Hand}
+		\label{fig:RoboHand}
 	\end{center}
 \end{figure}
+Diese Roboterhand besteht aus drei Fingern und einem Daumen. Die einzelnen Finger werden über Bowdenzüge und Linearmotoren bewegt. Der Daumen kann rotieren, so dass ein Pinzettengriff mit jedem einzelnen der Finger möglich ist.
+Die Ansteuerung geschieht über einen Arduino Mikrocontroller und vier verschiedene Knöpfe. Dies erfordert ein hohes Maß an Einarbeitung und Konzentration des Bedieners.
+Deshalb wird versucht mit dieser Arbeit eine Ansteuerung zu schaffen welche intuitiver und einfacher ist. Hierzu soll versucht werden die Bewegung der Hand des Bedieners aufzuzeichnen und als Eingangssignal zu verwenden.
+Besonderen Wert soll hierbei darauf gelegt werden die Vorteile der Hand, den Pinzettengriff, möglichst genau zu erreichen.
 \newpage
 \section{Stand der Technik}
 \emph{Stand der Technik (Literatur/Patent-Recherche)}
@@ -165,8 +172,8 @@ Wird diese lineare Bewegung gemessen, so kann bestimmt werden wie stark ein Fing
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{Bilder/HandPhoto1.pdf}
-		\label{fig:HandFinger}
 		\caption{Bautenzug über die Hand für die Finger}
+		\label{fig:HandFinger}
 	\end{center}
 \end{figure}
 In Abbildung \ref{fig:HandFinger} ist zu erkennen wie ein solcher Bowdenzug (orange) für die Finger angebracht werden könnte.
@@ -178,8 +185,8 @@ Um die Punkte alle auf einer Hand zu befestigen eignet sich am Besten ein Handsc
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{Bilder/HandPhoto2.pdf}
-		\label{fig:HandDaumen}
 		\caption{Bautenzug über die Hand für den Daumen}
+		\label{fig:HandDaumen}
 	\end{center}
 \end{figure}
 Wird für die Messung des Daumens ähnlich vorgegangen (Abbildung \ref{fig:HandDaumen}), so werden die Messdaten wahrscheinlich wenig Aussagekraft haben.
@@ -199,23 +206,22 @@ Bowdenzug negativ handschuh größe, Handschuh verrutscht leicht, Daumen kaum/ n
 \emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
 \subsection{HTTP code}
 \subsection{LabVIEW}
-\todo{Bildverlinkungen}
 Für die Roboterhand wird derzeit eine Steuerung in LabVIEW von einem anderen Team entwickelt. 
 Deshalb müssen die erfassten Daten nach LabVIEW übertragen werden. Hierfür wird mit LabVIEW ein lokaler Server Programmiert, welcher von der Weboberfläche per GET-Request angesprochen wird und die entsprechenden Daten übertragen bekommt \cite{NIwebserverTutorial}.
 Das angelegte LabVIEW Projekt besteht aus dem WebServerHand und den \\SharedVariables.lvlib (Abbildung \ref{fig:ProjektExplorer}).
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=7cm]{Bilder/ProjektExplorer.png}
-		\label{fig:ProjektExplorer}
 		\caption{Übersicht der Dateien des LabVIEW Projektes}
+		\label{fig:ProjektExplorer}
 	\end{center}
 \end{figure}
 In dem Server ist eine GET-Methode angelegt namens GetPinchState.vi. Diese besteht aus einem User Panel (Abbildung \ref{fig:LabVIEWuserPanel}), einem Block Diagram (Abbildung \ref{fig:LabVIEWBlockDia}) und einem Connector Pane (Abbildung \ref{fig:LabVIEWConnectorPane}).
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{Bilder/UserPanel.png}
-		\label{fig:LabVIEWuserPanel}
 		\caption{Aufbau des User Panels in der GET-Methode des LabVIEW Servers}
+		\label{fig:LabVIEWuserPanel}
 	\end{center}
 \end{figure}  
 In dem User Panel ist der Block LabVIEW Web Service Request angelegt über diesen kommt der GET Request in LabVIEW an.
@@ -223,8 +229,8 @@ Des Weiteren sind für jeden der vier gemessenen Finger ein Numeric Control Pane
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=10cm]{Bilder/BlockDiagram.png}
-		\label{fig:LabVIEWBlockDia}
 		\caption{Aufbau des Block Diagrams in der GET-Methode des LabVIEW Servers}
+		\label{fig:LabVIEWBlockDia}
 	\end{center}
 \end{figure}
 Die beschrieben Blöcke im User Panel werden im Block Diagram miteinander logisch verbunden.
@@ -233,8 +239,8 @@ Damit die Werte der Finger außerhalb des Servers verwendet werden können, sind
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=5cm]{Bilder/ConnectorPane.png}
-		\label{fig:LabVIEWConnectorPane}
 		\caption{Aufbau des Connector Panes in der GET-Methode des LabVIEW Servers}
+		\label{fig:LabVIEWConnectorPane}
 	\end{center}
 \end{figure}  
 Im Connector Pane sind von oben nach unten die Finger 0 bis 3 als Input verknüpft (Abbildung \ref{fig:LabVIEWConnectorPane}, orange) und der LabVIEW Web Service Request (blau). 
@@ -243,28 +249,28 @@ Mit einem Rechtsklick auf den WebServerHand im Explorer (Abbildung \ref{fig:Proj
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=8cm]{Bilder/Einstellungen-StartServerNeu.png}
-		\label{fig:EinstellungenWebServer}
 		\caption{Nötige Einstellungen in der NI-Webserver-Konfiguration}
+		\label{fig:EinstellungenWebServer}
 	\end{center}
 \end{figure}
 Sind diese Einstellungen vorgenommen und der Server gestartet, so kann über einen Rechtsklick auf die GetPinchState.vi (Abbildung \ref{fig:ProjektExplorer}) die Methoden-URL angezeigt werden (Abbildung \ref{fig:HTTPMethod})
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=12cm]{Bilder/HTTPMethod.png}
-		\label{fig:HTTPMethod}
 		\caption{URL des HTTP-GET Servers}
+		\label{fig:HTTPMethod}
 	\end{center}
 \end{figure}
 Zur Nutzung des Webservers muss Lediglich diese URL in einen Browser eingefügt werden und \glqq \{value\}\grqq\ durch einen Wert ersetzt werden.
 Anstelle der angegeben IP-Adresse kann auch \glqq localhost\grqq angegeben werde wenn der Browser und der Server sich auf dem selben PC befinden.
 Möchte man den Server auf einem anderen PC laufen lassen, so muss die IP-Adresse durch die des PC's im Netzwerk ersetzt werden.
 \subsection{Demonstration}
-In dem angehängtem Video (Anhang 3, Demo.mp4), ist auf der linken Seite das User Panel des LabVIEW Webserver zu sehen und auf der rechten Seite die Weboberfläche (Abbildung \ref{fig:ScreenshotVideo}).
+In dem angehängtem Video (Anhang 3, DemoVideo.mkv), ist auf der linken Seite das User Panel des LabVIEW Webserver zu sehen und auf der rechten Seite die Weboberfläche (Abbildung \ref{fig:ScreenshotVideo}).
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=12cm]{Bilder/ScreenshotVideo.png}
-		\label{fig:ScreenshotVideo}
 		\caption{Screenshot aus dem Demovideo im Anhang}
+		\label{fig:ScreenshotVideo}
 	\end{center}
 \end{figure}
 Es ist im Videofeed rechts zu erkennen das sich der Mittelfinger und der Daumen berühren. In der Tabelle darunter sieht man das in der Weboberfläche erkannt wurde, dass sich nur diese Finger berühren.
@@ -277,6 +283,8 @@ Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich sch
 \newpage
 \section{Ausblick}
 \emph{Zusammenfassung und Ausblick (Vorschläge für weiterführende Arbeiten)}
+Mehr Hände\\
+genaueres Tracking (werte von bis)
 \newpage
 \pagenumbering{Alph}
 \phantomsection 
@@ -288,7 +296,7 @@ Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich sch
 \begin{enumerate}
 	\item Code für die Website \_\_\_.html
 	\item Code des LabVIEW-Projektes \_\_\_
-	\item Demonstrations Video Demo.mp4
+	\item Demonstrations Video DemoVideo.mkv
 \end{enumerate}
 \newpage
 
