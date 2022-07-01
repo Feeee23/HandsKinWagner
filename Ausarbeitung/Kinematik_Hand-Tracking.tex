@@ -142,8 +142,8 @@ Durch die Arbeit vorheriger Gruppen, ist auch an der University of Applied Scien
 	\end{center}
 \end{figure}
 Diese Roboterhand besteht aus drei Fingern und einem Daumen. Die einzelnen Finger werden über Bowdenzüge und Linearmotoren bewegt. Der Daumen kann rotieren, so dass ein Pinzettengriff mit jedem einzelnen der Finger möglich ist.
-Die Ansteuerung geschieht über einen Arduino Mikrocontroller und vier verschiedene Knöpfe. Dies erfordert ein hohes Maß an Einarbeitung und Konzentration des Bedieners.
-Deshalb wird versucht mit dieser Arbeit eine Ansteuerung zu schaffen welche intuitiver und einfacher ist. Hierzu soll versucht werden die Bewegung der Hand des Bedieners aufzuzeichnen und als Eingangssignal zu verwenden.
+Die Ansteuerung geschieht über einen Arduino Mikrocontroller und vier verschiedene Knöpfe. Dies erfordert ein hohes Maß an Einarbeitung und Konzentration der bedienenden Person.
+Deshalb wird versucht mit dieser Arbeit eine Ansteuerung zu schaffen welche intuitiver und einfacher ist. Hierzu soll versucht werden die Bewegung der Hand der bedienenden Person aufzuzeichnen und als Eingangssignal zu verwenden.
 Besonderen Wert soll hierbei darauf gelegt werden die Vorteile der Hand, den Pinzettengriff, möglichst genau zu erreichen.
 \newpage
 \section{Stand der Technik}
@@ -280,11 +280,36 @@ Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich sch
 \newpage
 \section{Fazit}
 \emph{Diskussion (Interpretation und Beurteilung der Ergebnisse)}
+Wie in den Demonstrationsvideo zu erkennen ist funktioniert das Systeme, so das eine Hand problemlos erkannt.
+Der Status der Finger, ob sie den Daumen berühren oder nicht wird mit einer sehr hohen Wahrscheinlichkeit erkannt.
+SO kann der Pinzettengriff zuverlässig ausgeführt werden.\\
+Die Übertagung der Daten nach LabVIEW funktioniert zuverlässig und ausreichend schnell.
+Diese Daten stehen global in dem LabVIEW Projekt zu Verfügung und können somit einfach in die Steuerung eingebunden werden.\\
+Die Kosten für das Projekt sind sehr niedrig bis nicht vorhanden. Sollte die Steuerung der Hand auf einem Laptop laufen, so ist eine Webcam in den meisten Fällen integriert.
+Wird ein stationärer PC oder ein SoC wie beispielsweise ein Raspberry Pi eingesetzt, so kostet eine Webcam oder PiCam weniger als 20€, vor allem da keine hohe Auflösung nötig ist.\\
+Eines der Hauptziele war es die Steuerung intuitiver zu gestalten als das bisherige System, welches auf vier Knöpfe zur Steuerung setzt. Die neue Steuerung über die eigne Hand der bedienenden Person ist sehr intuitive.
+In dem Videofeed kann, durch das eingeblendete Modell, sofort gesehen werden ob die Hand erkannt wird. Durch die Statustabelle unter dem Video kann zusätzlich  einfach erkannt werden welche Finger im Moment zusammen geführt sind.\\
+Die bedienende Person muss also lediglich ihre Hand vor die Kamera halten und die Roboterhand imitiert sofort den Pinzettengriff. 
 \newpage
 \section{Ausblick}
-\emph{Zusammenfassung und Ausblick (Vorschläge für weiterführende Arbeiten)}
-Mehr Hände\\
-genaueres Tracking (werte von bis)
+Die gesteckten Ziele einer günstigen, einfachen und intuitiven konnten umgesetzt werden. 
+Die erfassten Werte gelangen schnell in LabVIEW wo sie von der Steuerung aufgegriffen werden können und in eine Bewegung der Roboter Hand umgesetzt werden können.\\
+Als anschließende Projekte könnte noch Erweiterungen des Systems folgen. So können theoretisch mehrere Hände in einem Videofeed erkannt werden.
+Somit könnte beispielsweise eine linke und eine rechte Hand erkannt und gesteuert werden. Dadurch kann eine bedienende Person mehrere Roboter gleichzeitig steuern.\\ 
+Die Bildverarbeitung erkennt im Moment lediglich den Pinzettengriff als Aktion und sendet diese an die Steuerung. Da die Position jedes Fingergelenkes erfasst wird (Abbildung \ref{fig:ScreenshotVideo}, rote Punkte) und abrufbar ist können theoretisch eigene Algorithmen entwickelt werden.
+Diese könnten immer die Fingerpositionen erfassen und somit der Roboterhand bereits kleine Fingerbewegungen mitteilen. Dann könnte die Roboterhand nicht nur den Pinzettengriff ausführen sondern fast jegliche Objekte greifen.
+Schwierigkeiten hierbei sind allerdings es muss zunächst eine Kalibrierung auf eine Hand stattfinden, da jede Hand anders groß ist, es muss beachtet werden das sich die Hand von der Kamera weg bewegen kann und dadurch kleiner wird und auch das die Roboterhand anders aufgebaut ist als eine menschliche Hand.
+Hierfür müsste ein System entwickelt werden, welches diese Fälle verarbeitet.\\
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=3.5cm]{Bilder/VIVE.png}
+		\caption{VIVE-Tracker für VR der Firma HTC \cite{HTCvive}}
+		\label{fig:VIVE}	
+	\end{center}
+\end{figure}
+Da die Roboter Hand an das Ende eines Roboterarmes Montiert werden muss um ihre volles Potential auszuschöpfen, wäre es ideal wenn nicht nur die Bewegung der Hände sondern auch die Bewegung der Arme erfasst werden könnte.
+Dann könnte eine Person neben der Roboterzelle stehen und alleine durch ihre Bewegung die Roboter Hand zu einem Gegenstand führen und durch die Fingerbewegungen den Gegenstand greifen.
+Durch die dreidimensionalität dieser Bewegung eignet sich hierfür eine Kamera nicht, es muss auf mehrere Kameras oder auf ein System mit auf dem Körper angebrachten Trackern wie den\glqq VIVE Tracker\grqq\ (Abbildung \ref{fig:VIVE}) zurückgegriffen werden.
 \newpage
 \pagenumbering{Alph}
 \phantomsection 
