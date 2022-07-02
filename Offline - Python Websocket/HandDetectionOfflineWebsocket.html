@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Handsfree.js -->
+    <link rel="stylesheet" href="handsfree.css" />
+    <script src="handsfreeOFF.js"></script>
+    <!-- Styles -->
+    <style>
+        .table, th, td{
+            border-color: black;
+            border: solid thin;
+            padding: 0.2cm;
+            margin: 1cm;
+        }
+        #coll { border-collapse: collapse; }
+        .dot {
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dotRed {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div> <!--Title-->
+        <h1>Finger tracking</h1>
+    </div>
+    <!-- Holds the Video -->
+    <div id="video-holder"  style="margin: 1cm; width: 1280px; height: 720px"></div> 
+    <div> <!--Status Table-->
+            <table id="coll">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Zeigefinger [0]</th>
+                        <th>Mittelfinger [1]</th>
+                        <th>Ringfinger [2]</th>
+                        <th>kleiner Finger [3]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>linke Hand [0]</th>
+                        <td><center><span class="dot" id="F00"></span></td>
+                        <td><center><span class="dot" id="F01"></span></td>
+                        <td><center><span class="dot" id="F02"></span></td>
+                        <td><center><span class="dot" id="F03"></span></td>
+                    </tr>
+                    <tr>
+                        <th>rechte Hand [1]</th>
+                        <td><center><span class="dot" id="F10"></span></td>
+                        <td><center><span class="dot" id="F11"></span></td>
+                        <td><center><span class="dot" id="F12"></span></td>
+                        <td><center><span class="dot" id="F13"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+	</center>
+	
+    <!-- Read for Finger state -->
+    <script>
+        const handsfree = new Handsfree({
+            showDebug: true,
+            setup: {
+                wrap: {
+                $parent: document.querySelector('#video-holder')
+                }
+            },
+            hands:{
+                enabled:true,
+                // The maximum number of hands to detect [0 - 4]
+                maxNumHands: 1,
+                // Minimum confidence [0 - 1] for a hand to be considered detected
+                minDetectionConfidence: 0.9,
+                // Minimum confidence [0 - 1] for the landmark tracker to be considered detected
+                minTrackingConfidence: 0.9
+             }
+        })
+        handsfree.start()
+
+		// Websocket to send data to: (use python websocketserver for testing)
+		var websocket = new WebSocket("ws://localhost:2323");
+				
+		// initialize callbacks for pinch/release events:
+        for (let hand = 0; hand < 2; hand++) {
+            for (let finger = 0; finger < 4; finger++) {
+                handsfree.on(`finger-pinched-start-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.add('dotRed')
+					if(hand==0){return;} // send only right hand to server
+					websocket.send("finger"+finger+"=pinched");  // Send web_socket - message
+                })
+                handsfree.on(`finger-pinched-released-${hand}-${finger}`, () => {
+                    const Finger = document.getElementById('F'+hand+finger)
+                    Finger.classList.remove('dotRed')
+					if(hand==0){return;} // send only right hand to server
+					websocket.send("finger"+finger+"=released");  // Send web_socket - message
+                })
+            }
+        }
+    </script>
+</body>
