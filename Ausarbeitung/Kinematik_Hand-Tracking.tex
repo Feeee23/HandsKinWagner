@@ -24,6 +24,9 @@
 \usepackage[english,ngerman]{babel}  % The last language in the list is the primary one.
 \usepackage{pdfpages} %zum Anhängen von PDF's
 \usepackage[pdfusetitle, colorlinks, linkcolor=black, citecolor=black, urlcolor=gray,]{hyperref}  % Add clickable links for figures etc. Comment out for printing if desired.
+\hypersetup{
+    colorlinks=false
+}
 \numberwithin{equation}{section} %nummeriert Formeln mit Kapitelnummer.Formelnummer ACHTUNG! muss nach hyperref kommen.
 \numberwithin{figure}{section} %numeriert Bilder mit Kapitelnummer.Bildnummer ACHTUNG! muss nach hyperref kommen.
 \numberwithin{table}{section} %numeriert Tabellen mit Kapitelnummer.Tabelle ACHTUNG! muss nach hyperref kommen.
@@ -31,23 +34,77 @@
 \setcounter{biburlucpenalty}{9000}% Großbuchstaben?? mach die Zeilenumbrüche bei link's
 \setcounter{tocdepth}{2} %Tiefe des Literaturverzeichnises, 2=inkl. subsecion so nur eine Seite Inhaltsverzeichnis
 \setlength{\parindent}{0pt} %einrücken bei absätzen verhindern
-\usepackage{listings}
 \usepackage{color}
+\definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
+\usepackage{upquote}
+\usepackage{listings}
+\lstdefinelanguage{JavaScript}{
+  morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  morestring=[b]",
+  morestring=[b]'
+}
 
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-\definecolor{bg_col}{rgb}{1,1,0.7}
+\lstdefinelanguage{HTML5}{
+        language=html,
+        sensitive=true, 
+        alsoletter={<>=-},
+        otherkeywords={
+        % HTML tags
+        <html>, <head>, <title>, </title>, <meta, />, </head>, <body>,
+        <canvas, \/canvas>, <script>, </script>, </body>, </html>, <!, html>, <style>, </style>, ><
+        },  
+        ndkeywords={
+        % General
+        =,
+        % HTML attributes
+        charset=, id=, width=, height=,
+        % CSS properties
+        border:, transform:, -moz-transform:, transition-duration:, transition-property:, transition-timing-function:
+        },  
+        morecomment=[s]{<!--}{-->},
+        tag=[s]
+}
 
-\lstset{ %
-  backgroundcolor=\color{bg_col},   % choose the background color
-  basicstyle=\footnotesize,        % size of fonts used for the code
-  breaklines=true,                 % automatic line breaking only at whitespace
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-  keywordstyle=\color{blue},       % keyword style
-  stringstyle=\color{mymauve},     % string literal style
+\lstset{%
+    % Basic design
+    backgroundcolor=\color{editorGray},
+    basicstyle={\small\ttfamily},   
+    frame=l,
+    % Line numbers
+    xleftmargin={0.75cm},
+    numbers=left,
+    stepnumber=1,
+    firstnumber=1,
+    numberfirstline=true,
+    % Code design   
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{darkgray}\ttfamily,
+    ndkeywordstyle=\color{editorGreen}\bfseries,
+    stringstyle=\color{editorOcher},
+    % Code
+    language=HTML5,
+    escapechar=§, 
+    alsolanguage=JavaScript,
+    alsodigit={.:;},
+    tabsize=2,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    extendedchars=true,
+    breaklines=true,        
+    % Support for German umlauts
+    literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
 }
 
 \usepackage{fancyhdr} %Kopf/Fußzeile
@@ -154,7 +211,7 @@ Erste Versuche die Bewegungsabläufe der Hand aufzunehmen wurden mithilfe von in
 
 Handschuhe haben im allgemeinen einige Nachteile die sie mit sich bringen. Der an und Abziehvorgan ist umständlich, die Größe des Handschuhes muss stimmen, Desinfektionsmaßnahmen sind kompliziert.
 
-Alternativ werden Handbewegungen auch mit Bewegungserkennungssystemen durch Marker und IR-Kamerasystemen aufgezeichnet. Über Triangolie die Position der einzellnen Markerpunkte berechnet. Hier ist die Firma VICON ein Vorreiter auf dem Markt.
+Alternativ werden Handbewegungen auch mit Bewe\-gungs\-er\-kenn\-ungs\-sys\-temen durch Marker und IR-Kamera\-systemen aufgezeichnet. Über Triangolie die Position der einzellnen Markerpunkte berechnet. Hier ist die Firma VICON ein Vorreiter auf dem Markt.
 
 Auch markerlose Kamerasysteme zur Bewegungserkennung existieren wie durch z.B. die Kinect Kamera ermöglicht.
 
@@ -195,16 +252,174 @@ Diese Bewegung liegt direkt neben der Bewegung des Handgelenks und ist schwierig
 Sind alle Bowdenzüge perfekt angebracht, so ist es theoretisch möglich in einer zukünftigen Arbeit einen Servomotor parallel zu den Potentiometer anzubringen und somit die Bowdenzüge zu spannen.
 Hierdurch könnte dem Nutzer simuliert werden, es würde sich ein Gegenstand zwischen den Fingern befinden, da eine Kraft auf die sich schließenden Finger ausgewirkt werden kann.  
 \subsection{Biegesensoren DMS}
-Die heutzutage erhältlichen Biegesensoren sind wesenlicht preiswerter als die ersten ihrer Art. Sie basieren nicht mehr auf dem Prinzip eines Lichwellenleiters sondern auf der Änderung der Leitfähigkeit von Materialien durch deren Biegung. Somit ermöglichen sie eine Einfache Möglichkeit den Gebogenheitsgrad eines einzellnen Fingers zu bestimmen. Als schwieriger erweißt sich jedoch die Positionsbestimmung des Daumens. Dieser kann sich auch unabhängig seines Biegegrades auf dem unteren Sattelgelenk in zwei Freiheitsgraden bewegen. Ein Begesensor reicht nicht um z.B. den Pinzettengriff zwischen Daumen und Zeigefinger und zwischen Daumen und Mittelfinger zu unterschieden.
+Die heutzutage erhältlichen Biegesensoren sind wesentlich preiswerter als die ersten ihrer Art. Sie basieren nicht mehr auf dem Prinzip eines Lichwellenleiters sondern auf der Änderung der Leitfähigkeit von Materialien durch deren Biegung (vgl. Abb. \ref{fig:FlexSensor}). Somit ermöglichen sie eine einfache Möglichkeit den Gebogenheitsgrad eines einzelnen Fingers zu bestimmen. Als schwieriger erweist sich jedoch die Positionsbestimmung des Daumens. Dieser kann sich auch unabhängig seines Biegegrades auf dem unteren Sattelgelenk in zwei Freiheitsgraden bewegen. Ein Biegesensor reicht nicht um z.B. den Pinzettengriff zwischen Daumen und Zeigefinger und zwischen Daumen und Mittelfinger zu unterschieden.
+
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{Bilder/Flex_sensor.jpg}
+		\caption{auf Leitfähigkeit basierender Biegesensor, lizensiert unter \href{https://creativecommons.org/licenses/by/2.0/}{CC BY 2.0}}
+		\label{fig:FlexSensor}
+	\end{center}
+\end{figure}
+
 
 \subsection{Image Processing}
-Mithilfe des Einsatzes von moderner Bildverarbeitung und künstlicher Intelligenz lassen sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die benötigten Investitionen nahe Null. Lediglich ein PC sowei eine passende Webcam sind bereits aussreichen um die Positionserkennung zu ermöglichen. Ausserdem fallen umständliches an und abziehen eines sensiblne Handschuhes so wie der damit verbundene verkabelungs Aufwand weg.
+Mithilfe des Einsatzes von moderner Bildverarbeitung und künstlicher Intelligenz lassen sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die benötigten Investitionen nahe Null. Lediglich ein PC sowei eine passende Webcam sind bereits aussreichen um die Positionserkennung zu ermöglichen. Ausserdem fallen um\-ständ\-liches an und abziehen eines sensiblen Handschuhes so wie der damit verbundene verkabelungs Aufwand weg. Dank frei verfügbarer, vor-trainierter Machine Learning-Modelle lassen sich selbst komplexe Objekte mit geringem Rechenaufwand erkennen \cite{MediaPipe}. 
+
+
 \subsection{Entscheidung}
-Bowdenzug negativ handschuh größe, Handschuh verrutscht leicht, Daumen kaum/ nicht messbar, (aufwendig), 
+% Bowdenzug negativ handschuh größe, Handschuh verrutscht leicht, Daumen kaum/ nicht messbar, (aufwendig), 
+
+Die erste mechanische Idee mit dem Bowdenzug besticht zwar durch die Möglichkeit Feedback in Form eines Wiederstandgefühls zu simulieren. Allerdings gestaltet sich der Aufbau mithilfe eines Handschuhs schwierig und würde bei nicht exakt passender Hand(-schuh)-größe sehr leicht verrutschen. Ein weiteres Problem die Positionsbestimmung des Daumens. Aufgrund des Sattelgelenks kann eine Unterscheidung zwischen Pinzetten\-griffen für verschiedene Finger nicht erfolgen. Selbiges gilt für den Ansatz mit Biege\-sensoren. Der Aufbau wäre zwar leichter und weniger anfällig zu Verrutschen, die genaue Erkennung der Handgesten ist aber aufgrund der vielen Freiheitsgrade nicht möglich.
+Daher fällt die Entscheidung auf den Ansatz mit moderner Bildverarbeitung und Maschine-Learning. Die Unterscheidung zwischen verschiedenen Pinzettengriffen ist möglich. Hinzu kommt dass das System unabhängig von der Handgröße für jeden Nutzer funktioniert und durch den Verzicht auf Handschuhe keine besonderen Reinigungsmaßnahmen erforderlich sind. Fertig trainierte Modelle sind frei verfügbar und die Genauigkeit der Erkennung sehr hoch.
+
+
 \newpage
 \section{Umsetzung des Konzepts}
-\emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
-\subsection{HTTP code}
+%\emph{Ergebnisse (CAD-Modelle, Funktionsmuster, Messdaten, etc.)}\\
+
+Die Wahl der Programmiersprache für den Bildbearbeitungsansatz von Handgesten fiel auf die Sprache Javascript. Es ermöglicht die Verwendung des Programms auf allen Betriebssystemen mit aktuellem Browser. So könnten auch mobile Endgeräte zur Erfassung der Handgesten genutzt werden.
+Außerdem lässt sich der Zugriff auf die Webcam und das Senden von Informationen über die Netzwerkschnittstelle leicht realisieren. 
+Als System zur Erkennung von Handgesten wurde \enquote{MediaPipe Hands} gewählt, dieses ist auch für Javascript verfügbar \cite{MediaPipeHands}.
+Zum erleichterten Zugriff auf die Funktionalitäten des MediaPipe-Modells wird die Bibliothek Handsfree eingesetzt \cite{Handsfree}.
+
+\subsection{Code zur Handgestenerkennung und Nutzeroberfläche}
+Der Javascriptcode wird über ein HTML-Dokument im Browser geöffnet.
+Im HTML-Code werden zuerst, im Header-Element die benötigten JavaScript-Bibliotheken zur Handgestenerkennung geladen und CSS-Style Vorschriften für das Design der Seite definiert:
+ 
+ \begin{lstlisting}[firstnumber=3]
+<head>
+    <!-- Include Handsfree.js -->
+    <link rel="stylesheet" href="https://unpkg.com/handsfree@8.5.1/build/lib/assets/handsfree.css" />
+    <script src="https://unpkg.com/handsfree@8.5.1/build/lib/handsfree.js"></script>
+    <!-- Styles -->§\vspace{-0.5em}\\\hspace*{2em}\large ... \setcounter{lstnumber}{27}§
+</head>
+ \end{lstlisting}
+
+ Anschließend wird die Seitenüberschrift sowie der Webcamfeed eingebettet:
+ 
+\begin{lstlisting}[firstnumber=30]
+<div> <!--Title-->
+	<h1>Finger tracking</h1>
+</div>
+<!-- Holds the Video -->
+<div id="video-holder"  style="margin: 1cm; width: 1280px; height: 720px"></div> 
+\end{lstlisting}
+
+Das letzte Element der Nutzeroberfläche bildet eine Tabelle zur Übersicht der aktuell erkannten Gesten. Jede Zelle enthält ein span-Element welches basiert auf den im Header definierten Styles als Kreis sichtbar wird. Zusätzlich ist jedes span-Element mit einer ID ausgestattet sodass die Farbe des Kreises vom folgenden Javascript aus geändert werden kann.
+
+\begin{lstlisting}[firstnumber=38]
+<div> <!--Status Table-->
+<table id="coll">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Zeigefinger [0]</th>
+			<th>Mittelfinger [1]</th>
+			<th>Ringfinger [2]</th>
+			<th>kleiner Finger [3]</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>linke Hand [0]</th>
+			<td><center><span class="dot" id="F00"></span></td>
+			<td><center><span class="dot" id="F01"></span></td>
+			<td><center><span class="dot" id="F02"></span></td>
+			<td><center><span class="dot" id="F03"></span></td>
+		</tr>
+		<tr>
+			<th>rechte Hand [1]</th>
+			<td><center><span class="dot" id="F10"></span></td>
+			<td><center><span class="dot" id="F11"></span></td>
+			<td><center><span class="dot" id="F12"></span></td>
+			<td><center><span class="dot" id="F13"></span></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+\end{lstlisting}
+
+Anschließend folgt der Javascript Code. Zuerst wird eine Funktion definiert die das Senden von Get-Requests mit Informationen über die Handgeste erlaubt. In Zeile 32 wird die Adresse, sowie der Port, des LabView-Servers oder localhost, falls Client und Server auf dem gleichen PC laufen, angegeben.
+\begin{lstlisting}[firstnumber=67]
+<script>
+	function httpGet(theUrl) {
+	  let xmlHttpReq = new XMLHttpRequest();
+      let url = 'http://localhost:8001/WebServerHand/GetPinchState'+theUrl; 
+	  xmlHttpReq.open("GET", url, false);
+	  xmlHttpReq.send(null);
+	  return xmlHttpReq.responseText;
+	}
+</script>
+\end{lstlisting}
+
+Es wurde auch die schnellere Übermittlung der Handgestendaten mittels Websocket getestet. Dazu muss ein Websocket angelegt werden.
+\begin{lstlisting}[firstnumber=99]
+var websocket = new WebSocket("ws://localhost:2323");
+\end{lstlisting}
+Dies hat jedoch den Nachteil dass eine dauerhafte Verbindung benötigt wird und die Implementierung eines Websocket-Server in Lab-View komplizierter ist. Daher wird im folgenden die robustere Variante mittels Get-Request verwendet.
+
+Um Gebrauch der Handsfree-Bibliothek zu machen wird ein Handsfree Element angelegt und entsprechend initialisiert.  Um den Camerafeed für den Nutzer sichtbar zu machen wird \texttt{showDebug} auf \texttt{true} gesetzt und die ID des Video-Elements übergeben.
+
+Da nur eine Roboterhand gesteuert werden soll wird die Maximale Anzahl an Händen auf 1 gesetzt.  Dabei wird immer die Hand mit der höchsten Sicherheit gewählt. Um falsche Detektionen von Hand-ähnlichen Objekten möglichst gering zu halten wird die minimale Sicherheit auf 90~\% gesetzt. 
+Anschießend wird die Handerkennung gestartet (Zeile 96).
+
+
+\begin{lstlisting}[firstnumber=79]
+const handsfree = new Handsfree({
+	showDebug: true,
+	setup: {
+		wrap: {
+		$parent: document.querySelector('#video-holder')
+		}
+	},
+	hands:{
+		enabled:true,
+		// The maximum number of hands to detect [0 - 4]
+		maxNumHands: 1,
+		// Minimum confidence [0 - 1] for a hand 
+		minDetectionConfidence: 0.9,
+		// Minimum confidence [0 - 1] for the landmark tracker
+		minTrackingConfidence: 0.9
+	 }
+})
+handsfree.start()
+\end{lstlisting}
+
+in der Variable \texttt{FState} werden die Zustände der einzelnen Finger gespeichert. Dabei steht 0 für offen und 1 für Pinzetten-griff zum Daumen.
+\begin{lstlisting}[firstnumber=101]
+let FState =[0,0,0,0];
+\end{lstlisting}
+
+Im folgenden werden über eine doppelte for-Schleife einmalig die Callbacks für alle Finger, beider Hände definiert.  Das bedeutet sobald die aktive \texttt{handsfree}-Instanz den Zangengriff für einen Finger erkennt wird das entsprechend definierte Callback aufgerufen.
+In den Callbacks wird die Farbe des entsprechenden Punktes in der oben definierten Tabelle geändert sowie der Status des Fingers in der globalen Variable \texttt{FState} angepasst. 
+Anschließend wird ein Get-Request, mit den Finger Zuständen, an den Lab-View Server gesendet.
+Alternativ kann durch auskommentieren der Zeilen 112 oder 120 auch ein Websocket an einen geeigneten Empfänger gesendet werden.
+
+\begin{lstlisting}[firstnumber=104]
+for (let hand = 0; hand < 2; hand++) {
+for (let finger = 0; finger < 4; finger++) {
+	handsfree.on(`finger-pinched-start-${hand}-${finger}`, () => {
+		const Finger = document.getElementById('F'+hand+finger)
+		Finger.classList.add('dotRed')
+		if(hand==0){return;} // send only right hand to server
+		FState[finger]=1
+		httpGet("?finger3="+FState[3]+"&finger2="+FState[2]+"&finger1="+FState[1]+"&finger0="+FState[0])
+		//websocket.send("finger"+finger+"=pinched");
+	})
+	handsfree.on(`finger-pinched-released-${hand}-${finger}`, () => {
+		const Finger = document.getElementById('F'+hand+finger)
+		Finger.classList.remove('dotRed')
+		if(hand==0){return;} // send only right hand to server
+		FingerState[finger]=0
+		httpGet("?finger3="+FState[3]+"&finger2="+FState[2]+"&finger1="+FState[1]+"&finger0="+FState[0])
+		//websocket.send("finger"+finger+"=released");
+	})
+}
+}
+\end{lstlisting}
+
 \subsection{LabVIEW}
 Für die Roboterhand wird derzeit eine Steuerung in LabVIEW von einem anderen Team entwickelt. 
 Deshalb müssen die erfassten Daten nach LabVIEW übertragen werden. Hierfür wird mit LabVIEW ein lokaler Server Programmiert, welcher von der Weboberfläche per GET-Request angesprochen wird und die entsprechenden Daten übertragen bekommt \cite{NIwebserverTutorial}.
@@ -278,6 +493,14 @@ In dem User Panel links ist zu sehen, dass lediglich bei Finger 1 der Wert von 0
 Das Demonstrationsvideo lässt den Prozess etwas langsam und verzögert wirken. Dies liegt allerdings nur daran das der Testrechner mit einer schwachen und über 10 Jahren alten CPU ausgestattet ist und gleichzeitig den Bildschirm aufzeichnet. 
 Ohne Bild\-schirm\-auf\-zeich\-nung läuft der Prozess flüssig und deutlich schneller. 
 \newpage
+
+\section{Fazit 2}
+Das entworfene Konzept der Handgestenerkennung mithilfe von Bildverarbeitung und Mashine-Learning ist voll funktionsfähig. 
+Die verschiedenen Pinzetten\-griffe können intuitiv und frei von jeglicher Verkabelung vom Nutzer durchgeführt werden und werden vom System zuverlässig erkannt. 
+Der gespiegelte Webcamfeed und die Tabelle zu den erkannten Pinzettengriffen erleichtert die Bedienung sodass ein Einweisen in das Systems selbst für neue Nutzer kaum notwendig ist.
+Dank der Implementierung über Javascript lässt sich das System auch auf einfacher Hardware wie Mobiltelefonen o.ä. ausführen. 
+Die Erfassten Daten können direkt per Lan- oder WLAN-Schnittstelle zu LabVIEW  oder einem anderen Server gesendet werden. Dadurch ist eine Anbindung an die Steuerungssoftware der Hand flexibel möglich.
+
 \section{Fazit}
 \emph{Diskussion (Interpretation und Beurteilung der Ergebnisse)}
 Wie in den Demonstrationsvideo zu erkennen ist funktioniert das Systeme, so das eine Hand problemlos erkannt.
