@@ -66,8 +66,7 @@
 	<script>
 	function httpGet(theUrl) {
 	  let xmlHttpReq = new XMLHttpRequest();
-      let url = 'http://localhost:8080/WebServerHand/GetPinchState'+theUrl; //IP des rechners (oder localhost) und PORT 8001 bei Testserver sonst 80
-	  //let url = theUrl;
+      let url = 'http://localhost:8001/WebServerHand/GetPinchState'+theUrl; //IP des rechners (oder localhost) und PORT 8001 bei Testserver sonst 80
 	  xmlHttpReq.open("GET", url, false);
 	  xmlHttpReq.send(null);
 	  return xmlHttpReq.responseText;
