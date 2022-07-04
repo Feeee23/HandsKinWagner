@@ -36,8 +36,8 @@
       \strng{authorbibnamehash}{dd51491356eea0174873278d9ea5cab1}
       \strng{authornamehash}{dd51491356eea0174873278d9ea5cab1}
       \strng{authorfullhash}{dd51491356eea0174873278d9ea5cab1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3., neu bearbeitete und er\-weit\-er\-te Auflage}
@@ -59,8 +59,8 @@
       \strng{authorbibnamehash}{07cb672666edbea014338f3519f3daa1}
       \strng{authornamehash}{07cb672666edbea014338f3519f3daa1}
       \strng{authorfullhash}{07cb672666edbea014338f3519f3daa1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{VDI Berichte 850, Roboter in der Verpackungstechnik}
@@ -92,8 +92,8 @@
       \strng{authorbibnamehash}{b8f966da4c011ff5026c47806af72098}
       \strng{authornamehash}{b8f966da4c011ff5026c47806af72098}
       \strng{authorfullhash}{b8f966da4c011ff5026c47806af72098}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-446-43993-1}
@@ -112,8 +112,8 @@
       \strng{authorbibnamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
       \strng{authornamehash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
       \strng{authorfullhash}{46aa5b54c7c6d0a3bd1579bf7dc44c25}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{US 4542291}
@@ -132,8 +132,8 @@
       \strng{authorbibnamehash}{78d8cf8efb7de074975b11efdabacda5}
       \strng{authornamehash}{78d8cf8efb7de074975b11efdabacda5}
       \strng{authorfullhash}{78d8cf8efb7de074975b11efdabacda5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{1993 VR Conference Proceedings: abgerufen am 19.06.22}
@@ -154,8 +154,8 @@
       \strng{authorbibnamehash}{aa76858c9b8f06e5524bfa9246689595}
       \strng{authornamehash}{aa76858c9b8f06e5524bfa9246689595}
       \strng{authorfullhash}{aa76858c9b8f06e5524bfa9246689595}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cyber Glove Systems}
@@ -176,14 +176,131 @@
       \strng{authorbibnamehash}{283cd6eef440269b0fdab5e2510eb17a}
       \strng{authornamehash}{283cd6eef440269b0fdab5e2510eb17a}
       \strng{authorfullhash}{283cd6eef440269b0fdab5e2510eb17a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{High-End Gloves for Robotics, Animation, Virtual Reality, Medical and Bio-mechanics Research}
       \field{year}{2022}
       \verb{file}
       \verb https://www.synertial.com/cobra-gloves
+      \endverb
+    \endentry
+    \entry{NintendoGlove}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=52c54e07dabe4c343e2be1bd5d0c26f1}{%
+           family={Reyes},
+           familyi={R\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \strng{fullhash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \strng{bibnamehash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \strng{authorbibnamehash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \strng{authornamehash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \strng{authorfullhash}{52c54e07dabe4c343e2be1bd5d0c26f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{online}
+      \field{title}{25 Terrible Video Game Accessories}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://guff.com/25-terrible-video-game-accessories
+      \endverb
+      \verb{url}
+      \verb https://guff.com/25-terrible-video-game-accessories
+      \endverb
+    \endentry
+    \entry{MediaPipe}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=dfb2aa3f22269786162c9a57cea77fe8}{%
+           family={Bazarevsky},
+           familyi={B\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{dddb3f15445870550e6022a0b496d90f}
+      \strng{fullhash}{dddb3f15445870550e6022a0b496d90f}
+      \strng{bibnamehash}{dddb3f15445870550e6022a0b496d90f}
+      \strng{authorbibnamehash}{dddb3f15445870550e6022a0b496d90f}
+      \strng{authornamehash}{dddb3f15445870550e6022a0b496d90f}
+      \strng{authorfullhash}{dddb3f15445870550e6022a0b496d90f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{online}
+      \field{title}{On-Device, Real-Time Hand Tracking with MediaPipe}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html
+      \endverb
+      \verb{url}
+      \verb https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html
+      \endverb
+    \endentry
+    \entry{MediaPipeHands}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=11bb1d2fc83a61c4b40b81c2f83149db}{%
+           family={LLC},
+           familyi={L\bibinitperiod},
+           given={Google},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \strng{fullhash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \strng{bibnamehash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \strng{authorbibnamehash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \strng{authornamehash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \strng{authorfullhash}{11bb1d2fc83a61c4b40b81c2f83149db}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{online}
+      \field{title}{MediaPipe Hands}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://google.github.io/mediapipe/solutions/hands
+      \endverb
+      \verb{url}
+      \verb https://google.github.io/mediapipe/solutions/hands
+      \endverb
+    \endentry
+    \entry{Handsfree}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=12978386edcb014a1321907830bcd8c0}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Oz},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{12978386edcb014a1321907830bcd8c0}
+      \strng{fullhash}{12978386edcb014a1321907830bcd8c0}
+      \strng{bibnamehash}{12978386edcb014a1321907830bcd8c0}
+      \strng{authorbibnamehash}{12978386edcb014a1321907830bcd8c0}
+      \strng{authornamehash}{12978386edcb014a1321907830bcd8c0}
+      \strng{authorfullhash}{12978386edcb014a1321907830bcd8c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{online}
+      \field{title}{Handsfree.js}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://handsfree.js.org
+      \endverb
+      \verb{url}
+      \verb https://handsfree.js.org
       \endverb
     \endentry
     \entry{NIwebserverTutorial}{misc}{}
@@ -200,8 +317,8 @@
       \strng{authorbibnamehash}{20b93550b7f746a4a453b3de825e038f}
       \strng{authornamehash}{20b93550b7f746a4a453b3de825e038f}
       \strng{authorfullhash}{20b93550b7f746a4a453b3de825e038f}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{online}
@@ -209,10 +326,10 @@
       \field{title}{Tutorial: Creating and Publishing a LabVIEW Web Service to the Application Web Server (Real-Time, Windows)}
       \field{year}{2022}
       \verb{urlraw}
-      \verb \url{https://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html}
+      \verb https://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html%7D
+      \verb https://www.ni.com/docs/de-DE/bundle/labview/page/lvhowto/build_web_service.html
       \endverb
     \endentry
     \entry{HTCvive}{misc}{}
@@ -237,10 +354,10 @@
       \field{title}{HTC VIVE Tracker}
       \field{year}{2022}
       \verb{urlraw}
-      \verb \url{https://www.vive.com/media/filer_public/fed-assets/tracker3/images/meta-image.png}
+      \verb https://www.vive.com/media/filer_public/fed-assets/tracker3/images/meta-image.png
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://www.vive.com/media/filer_public/fed-assets/tracker3/images/meta-image.png%7D
+      \verb https://www.vive.com/media/filer_public/fed-assets/tracker3/images/meta-image.png
       \endverb
     \endentry
   \enddatalist

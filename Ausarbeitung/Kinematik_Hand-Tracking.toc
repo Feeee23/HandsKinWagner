@@ -9,10 +9,10 @@
 \contentsline {subsection}{\numberline {3.3}Image Processing}{5}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Entscheidung}{5}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Umsetzung des Konzepts}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}HTTP code}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}LabVIEW}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Demonstration}{9}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Fazit}{11}{section.5}%
-\contentsline {section}{\numberline {6}Ausblick}{12}{section.6}%
-\contentsline {section}{Literaturverzeichnis}{A}{section*.6}%
-\contentsline {section}{Anhang}{B}{section*.8}%
+\contentsline {subsection}{\numberline {4.1}Code zur Handgestenerkennung und Nutzeroberfl^^c3^^a4che}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}LabVIEW}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Demonstration}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Diskussion}{15}{section.5}%
+\contentsline {section}{\numberline {6}Ausblick}{16}{section.6}%
+\contentsline {section}{Literaturverzeichnis}{A}{section*.5}%
+\contentsline {section}{Anhang}{B}{section*.7}%

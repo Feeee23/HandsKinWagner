@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.28)  1 JUL 2022 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.6.28)  4 JUL 2022 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/Kinematik_Hand-Tracking.tex"
-(/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/Kinematik_Hand-Tracking.tex
+**"/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/HandsKinWagner-main/Ausarbeitung/Kinematik_Hand-Tracking.tex"
+(/home/felix/Documents/Studium/uni UAS/2. Semester/Kin-Wagner/Vorabprojekt/Ausarbeitung/HandsKinWagner-main/Ausarbeitung/Kinematik_Hand-Tracking.tex
 LaTeX2e <2022-06-01> patch level 3
 L3 programming layer <2022-06-16> (/home/felix/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -905,6 +905,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip85
+) (/home/felix/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 ) (/home/felix/.miktex/texmfs/install/tex/latex/listings/listings.sty
 \lst@mode=\count476
 \lst@gtempboxa=\box83
@@ -927,7 +929,11 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/home/felix/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+ (/home/felix/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/home/felix/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+) (/home/felix/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
 \f@nch@headwidth=\skip86
 \f@nch@O@elh=\skip87
@@ -943,30 +949,30 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 65.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 122.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (Kinematik_Hand-Tracking.aux)
 \openout1 = `Kinematik_Hand-Tracking.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1022,16 +1028,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 65.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 122.
 
 (/home/felix/.miktex/texmfs/install/tex/latex/translations/dicts/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 65.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 122.
  (/home/felix/.miktex/texmfs/install/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 65.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 122.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (/home/felix/.miktex/texmfs/install/tex/latex/biblatex/lbx/ngerman.lbx
@@ -1059,8 +1065,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Kinematik_Hand-Tracking.bbl' found.
  (Kinematik_Hand-Tracking.bbl)
-Package biblatex Info: Reference section=0 on input line 65.
-Package biblatex Info: Reference segment=0 on input line 65.
+Package biblatex Info: Reference section=0 on input line 122.
+Package biblatex Info: Reference segment=0 on input line 122.
  (/home/felix/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
  (/home/felix/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
@@ -1068,7 +1074,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 65.
+Package hyperref Info: Link coloring ON on input line 122.
  (Kinematik_Hand-Tracking.out) (Kinematik_Hand-Tracking.out)
 \@outlinefile=\write5
 \openout5 = `Kinematik_Hand-Tracking.out'.
@@ -1077,14 +1083,14 @@ Package hyperref Info: Link coloring ON on input line 65.
 <Bilder/logo.pdf, id=74, 255.30925pt x 103.15169pt>
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 69.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 126.
 (pdftex.def)             Requested size: 227.62204pt x 91.96838pt.
  [0
 
 {/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./Bilder/logo.pdf>]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 115.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 172.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
  [1] (Kinematik_Hand-Tracking.toc
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7.
@@ -1111,326 +1117,227 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 122.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 179.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
  [2] (Kinematik_Hand-Tracking.lof)
 \tf@lof=\write7
 \openout7 = `Kinematik_Hand-Tracking.lof'.
 
- (Kinematik_Hand-Tracking.lot)
-\tf@lot=\write8
-\openout8 = `Kinematik_Hand-Tracking.lot'.
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 127.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 184.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
  [3]
-<Bilder/RoboHandVorne.png, id=148, 469.755pt x 650.43pt>
+<Bilder/RoboHandVorne.png, id=154, 469.755pt x 650.43pt>
 File: Bilder/RoboHandVorne.png Graphic file (type png)
 <use Bilder/RoboHandVorne.png>
-Package pdftex.def Info: Bilder/RoboHandVorne.png  used on input line 137.
+Package pdftex.def Info: Bilder/RoboHandVorne.png  used on input line 194.
 (pdftex.def)             Requested size: 164.3952pt x 227.62204pt.
-<Bilder/RoboHandHinten.png, id=149, 445.665pt x 646.415pt>
+<Bilder/RoboHandHinten.png, id=155, 445.665pt x 646.415pt>
 File: Bilder/RoboHandHinten.png Graphic file (type png)
 <use Bilder/RoboHandHinten.png>
-Package pdftex.def Info: Bilder/RoboHandHinten.png  used on input line 139.
+Package pdftex.def Info: Bilder/RoboHandHinten.png  used on input line 196.
 (pdftex.def)             Requested size: 156.93033pt x 227.62204pt.
-
-Overfull \hbox (23.31273pt too wide) in paragraph at lines 144--148
-\OT1/lmr/m/n/12 ist. Hierzu soll versucht werden die Bewegung der Hand der bedienenden Person aufzuzeichnen
- []
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 148.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 205.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[1 <./Bilder/RoboHandVorne.png> <./Bilder/RoboHandHinten.png>]
-Overfull \hbox (4.65414pt too wide) in paragraph at lines 152--154
-\OT1/lmr/m/n/12 Aufwand erfassen. Und eine Steuerung mittels Joysticks o.[]a. ist ungeeignet. Erste Versuche
- []
-
-
-Overfull \hbox (8.86108pt too wide) in paragraph at lines 152--154
-\OT1/lmr/m/n/12 eingebauten Biegesensoren [[][]4[][]] und Lagesensoren durchgef[]uhrt. Die zu dieser Zeit boomende
- []
-
-
-Overfull \hbox (0.14278pt too wide) in paragraph at lines 152--154
-\OT1/lmr/m/n/12 Computerspielindustrie griff die Idee schnell auf und brachte den, technisch vereinfachten,
- []
-
-
-Overfull \hbox (3.80667pt too wide) in paragraph at lines 152--154
-\OT1/lmr/m/n/12 PowerGlove [[][]5[][]] auf den Markt. Heute sind verschiedene Firmen im Markt die professionelle
- []
-
-
-Overfull \hbox (53.32391pt too wide) in paragraph at lines 155--156
-\OT1/lmr/m/n/12 Abziehvorgan ist umst[]andlich, die Gr[]o^^Ye des Handschuhes muss stimmen, Desinfektionsma^^Ynahmen
- []
-
-
-Overfull \hbox (15.30775pt too wide) in paragraph at lines 157--158
-[]\OT1/lmr/m/n/12 Alternativ werden Handbewegungen auch mit Bewegungserkennungssystemen durch Marker
- []
-
-
-Overfull \hbox (41.84473pt too wide) in paragraph at lines 157--158
-\OT1/lmr/m/n/12 und IR-Kamerasystemen aufgezeichnet. []Uber Triangolie die Position der einzellnen Markerpunkte
- []
-
+ [1 <./Bilder/RoboHandVorne.png> <./Bilder/RoboHandHinten.png>]
+<Bilder/nintendo-power-glove.jpg, id=168, 1204.5pt x 903.375pt>
+File: Bilder/nintendo-power-glove.jpg Graphic file (type jpg)
+<use Bilder/nintendo-power-glove.jpg>
+Package pdftex.def Info: Bilder/nintendo-power-glove.jpg  used on input line 212.
+(pdftex.def)             Requested size: 227.62204pt x 170.70569pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 162.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 224.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[2]
-<Bilder/HandPhoto1.pdf, id=171, 360.34625pt x 164.615pt>
+ [2 <./Bilder/nintendo-power-glove.jpg>]
+<Bilder/HandPhoto1.pdf, id=179, 360.34625pt x 164.615pt>
 File: Bilder/HandPhoto1.pdf Graphic file (type pdf)
 <use Bilder/HandPhoto1.pdf>
-Package pdftex.def Info: Bilder/HandPhoto1.pdf  used on input line 174.
+Package pdftex.def Info: Bilder/HandPhoto1.pdf  used on input line 235.
 (pdftex.def)             Requested size: 284.52756pt x 129.97911pt.
 
 
 pdfTeX warning: pdflatex (file ./Bilder/HandPhoto2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Bilder/HandPhoto2.pdf, id=173, 335.50255pt x 188.72017pt>
+<Bilder/HandPhoto2.pdf, id=181, 335.50255pt x 188.72017pt>
 File: Bilder/HandPhoto2.pdf Graphic file (type pdf)
 <use Bilder/HandPhoto2.pdf>
-Package pdftex.def Info: Bilder/HandPhoto2.pdf  used on input line 187.
+Package pdftex.def Info: Bilder/HandPhoto2.pdf  used on input line 248.
 (pdftex.def)             Requested size: 284.52756pt x 160.04716pt.
-
-Overfull \hbox (29.16154pt too wide) in paragraph at lines 179--191
-\OT1/lmr/m/n/12 angebracht werden k[]onnte. Das schwarze Objekte an der Fingerspitze ist der Befestigungspunkt
- []
-
-
-Overfull \hbox (13.25706pt too wide) in paragraph at lines 179--191
-\OT1/lmr/m/n/12 Bowdenzug nicht von den Fingern rutscht. Hellgr[]un ist die Druckfeste H[]ulle des Bowdenzugs
- []
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 192.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 253.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [3 <./Bilder/HandPhoto1.pdf>]
-Overfull \hbox (23.92877pt too wide) in paragraph at lines 192--197
-\OT1/lmr/m/n/12 ist die Bewegung des Daumens beim Pinzettengriff nur sehr gering weshalb die Unterscheidung
- []
-
-
-Overfull \hbox (4.22403pt too wide) in paragraph at lines 192--197
-\OT1/lmr/m/n/12 Sind alle Bowdenz[]uge perfekt angebracht, so ist es theoretisch m[]oglich in einer zuk[]unftigen
- []
-
-
-Overfull \hbox (27.35822pt too wide) in paragraph at lines 192--197
-\OT1/lmr/m/n/12 Arbeit einen Servomotor parallel zu den Potentiometer anzubringen und somit die Bowdenz[]uge
- []
-
-
-Overfull \hbox (0.61719pt too wide) in paragraph at lines 192--197
-\OT1/lmr/m/n/12 zu spannen. Hierdurch k[]onnte dem Nutzer simuliert werden, es w[]urde sich ein Gegenstand
- []
-
-
-Overfull \hbox (20.76869pt too wide) in paragraph at lines 198--199
-\OT1/lmr/m/n/12 sich auch unabh[]angig seines Biegegrades auf dem unteren Sattelgelenk in zwei Freiheitsgraden
- []
-
-
-Overfull \hbox (9.97203pt too wide) in paragraph at lines 201--202
-\OT1/lmr/m/n/12 sich viele Probleme der vorherigen Methoden vermeiden. So sind allen vorran die ben[]otigten
- []
-
+<Bilder/Flex_Sensor.jpg, id=196, 240.9pt x 240.9pt>
+File: Bilder/Flex_Sensor.jpg Graphic file (type jpg)
+<use Bilder/Flex_Sensor.jpg>
+Package pdftex.def Info: Bilder/Flex_Sensor.jpg  used on input line 264.
+(pdftex.def)             Requested size: 170.71652pt x 170.72038pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 202.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 272.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[4 <./Bilder/HandPhoto2.pdf>]
+ [4 <./Bilder/HandPhoto2.pdf>]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 204.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 281.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-<Bilder/ProjektExplorer.png, id=199, 280.04625pt x 326.4195pt>
+ [5 <./Bilder/Flex_Sensor.jpg>]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 293.
+ (/home/felix/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 294.
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [6]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 351.
+ (/home/felix/.miktex/texmfs/install/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 354.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [7]
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 393.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [8]
+<Bilder/ProjektExplorer.png, id=307, 280.04625pt x 326.4195pt>
 File: Bilder/ProjektExplorer.png Graphic file (type png)
 <use Bilder/ProjektExplorer.png>
-Package pdftex.def Info: Bilder/ProjektExplorer.png  used on input line 214.
+Package pdftex.def Info: Bilder/ProjektExplorer.png  used on input line 431.
 (pdftex.def)             Requested size: 199.16928pt x 232.15791pt.
-
-Overfull \hbox (12.74751pt too wide) in paragraph at lines 209--218
-\OT1/lmr/m/n/12 Hierf[]ur wird mit LabVIEW ein lokaler Server Programmiert, welcher von der Weboberfl[]ache
- []
-
-
-Overfull \hbox (0.31711pt too wide) in paragraph at lines 209--218
-\OT1/lmr/m/n/12 per GET-Request angesprochen wird und die entsprechenden Daten []ubertragen bekommt
- []
-
-<Bilder/UserPanel.png, id=203, 640.794pt x 396.2805pt>
+File: Bilder/logo.pdf Graphic file (type pdf)
+<use Bilder/logo.pdf>
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 435.
+(pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
+ [9]
+<Bilder/UserPanel.png, id=339, 640.794pt x 396.2805pt>
 File: Bilder/UserPanel.png Graphic file (type png)
 <use Bilder/UserPanel.png>
-Package pdftex.def Info: Bilder/UserPanel.png  used on input line 222.
+Package pdftex.def Info: Bilder/UserPanel.png  used on input line 439.
 (pdftex.def)             Requested size: 284.52756pt x 175.9603pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 227.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 444.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[6 <./Bilder/ProjektExplorer.png>]
-<Bilder/BlockDiagram.png, id=209, 517.33275pt x 387.24675pt>
+ [10 <./Bilder/ProjektExplorer.png>]
+<Bilder/BlockDiagram.png, id=345, 517.33275pt x 387.24675pt>
 File: Bilder/BlockDiagram.png Graphic file (type png)
 <use Bilder/BlockDiagram.png>
-Package pdftex.def Info: Bilder/BlockDiagram.png  used on input line 231.
+Package pdftex.def Info: Bilder/BlockDiagram.png  used on input line 448.
 (pdftex.def)             Requested size: 284.52756pt x 212.98636pt.
-
-Overfull \hbox (5.65302pt too wide) in paragraph at lines 227--235
-\OT1/lmr/m/n/12 kommt der GET Request in LabVIEW an. Des Weiteren sind f[]ur jeden der vier gemessenen
- []
-
-<Bilder/ConnectorPane.png, id=210, 51.19125pt x 30.1125pt>
+<Bilder/ConnectorPane.png, id=346, 51.19125pt x 30.1125pt>
 File: Bilder/ConnectorPane.png Graphic file (type png)
 <use Bilder/ConnectorPane.png>
-Package pdftex.def Info: Bilder/ConnectorPane.png  used on input line 241.
+Package pdftex.def Info: Bilder/ConnectorPane.png  used on input line 458.
 (pdftex.def)             Requested size: 142.26378pt x 83.6904pt.
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 245.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 462.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[7 <./Bilder/UserPanel.png> <./Bilder/BlockDiagram.png>]
-<Bilder/Einstellungen-StartServerNeu.png, id=218, 442.0515pt x 428.19975pt>
+ [11 <./Bilder/UserPanel.png> <./Bilder/BlockDiagram.png>]
+<Bilder/Einstellungen-StartServerNeu.png, id=354, 442.0515pt x 428.19975pt>
 File: Bilder/Einstellungen-StartServerNeu.png Graphic file (type png)
 <use Bilder/Einstellungen-StartServerNeu.png>
-Package pdftex.def Info: Bilder/Einstellungen-StartServerNeu.png  used on input line 251.
+Package pdftex.def Info: Bilder/Einstellungen-StartServerNeu.png  used on input line 468.
 (pdftex.def)             Requested size: 227.62204pt x 220.4894pt.
-
-Overfull \hbox (6.12978pt too wide) in paragraph at lines 246--255
-\OT1/lmr/m/n/12 (Abbildung [][]4.4[][], orange) und der LabVIEW Web Service Request (blau). Dadurch gelangen
- []
-
-
-Overfull \hbox (4.34198pt too wide) in paragraph at lines 246--255
-\OT1/lmr/m/n/12 Server gestartet werden. Vorher sollten allerdings diese Einstellungen in der NI-Webserver-
- []
-
-<Bilder/HTTPMethod.png, id=221, 450.483pt x 159.59625pt>
+<Bilder/HTTPMethod.png, id=357, 450.483pt x 159.59625pt>
 File: Bilder/HTTPMethod.png Graphic file (type png)
 <use Bilder/HTTPMethod.png>
-Package pdftex.def Info: Bilder/HTTPMethod.png  used on input line 259.
+Package pdftex.def Info: Bilder/HTTPMethod.png  used on input line 476.
 (pdftex.def)             Requested size: 341.43306pt x 120.96564pt.
-
-Overfull \hbox (7.83987pt too wide) in paragraph at lines 256--263
-\OT1/lmr/m/n/12 Rechtsklick auf die GetPinchState.vi (Abbildung [][]4.1[][]) die Methoden-URL angezeigt werden
- []
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 264.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 481.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[8 <./Bilder/ConnectorPane.png> <./Bilder/Einstellungen-StartServerNeu.png>]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 264.
+ [12 <./Bilder/ConnectorPane.png> <./Bilder/Einstellungen-StartServerNeu.png>]
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 481.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 264.
-<Bilder/ScreenshotVideo.png, id=227, 1441.385pt x 776.9025pt>
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 481.
+<Bilder/ScreenshotVideo.png, id=363, 1441.385pt x 776.9025pt>
 File: Bilder/ScreenshotVideo.png Graphic file (type png)
 <use Bilder/ScreenshotVideo.png>
-Package pdftex.def Info: Bilder/ScreenshotVideo.png  used on input line 271.
+Package pdftex.def Info: Bilder/ScreenshotVideo.png  used on input line 488.
 (pdftex.def)             Requested size: 341.43306pt x 184.03021pt.
-
-Overfull \hbox (1.90477pt too wide) in paragraph at lines 268--275
-\OT1/lmr/m/n/12 User Panel des LabVIEW Webserver zu sehen und auf der rechten Seite die Weboberfl[]ache
- []
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 280.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 497.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[9 <./Bilder/HTTPMethod.png> <./Bilder/ScreenshotVideo.png>]
+ [13 <./Bilder/HTTPMethod.png> <./Bilder/ScreenshotVideo.png>]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 280.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 497.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
- [10]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 289.
+ [14]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 506.
  (/home/felix/.miktex/texmfs/install/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (16.10805pt too wide) in paragraph at lines 282--293
-\OT1/lmr/m/it/12 Diskussion (Interpretation und Beurteilung der Ergebnisse) \OT1/lmr/m/n/12 Wie in den Demonstrationsvideo
- []
-
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 293.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 510.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[11]
-<Bilder/VIVE.png, id=244, 646.415pt x 617.30624pt>
+ [15]
+<Bilder/VIVE.png, id=380, 646.415pt x 617.30624pt>
 File: Bilder/VIVE.png Graphic file (type png)
 <use Bilder/VIVE.png>
-Package pdftex.def Info: Bilder/VIVE.png  used on input line 305.
-(pdftex.def)             Requested size: 99.58464pt x 95.09747pt.
+Package pdftex.def Info: Bilder/VIVE.png  used on input line 520.
+(pdftex.def)             Requested size: 113.81102pt x 108.68015pt.
 
-Overfull \hbox (9.28218pt too wide) in paragraph at lines 295--309
-\OT1/lmr/m/n/12 theoretisch mehrere H[]ande in einem Videofeed erkannt werden. Somit k[]onnte beispielsweise
- []
-
-
-Overfull \hbox (7.68205pt too wide) in paragraph at lines 295--309
-\OT1/lmr/m/n/12 sendet diese an die Steuerung. Da die Position jedes Fingergelenkes erfasst wird (Abbildung
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--309
+Underfull \hbox (badness 10000) in paragraph at lines 512--524
 
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 313.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 528.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
-[12 <./Bilder/VIVE.png>]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 317.
- (/home/felix/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (1.4784pt too wide) in paragraph at lines 318--318
+[16 <./Bilder/VIVE.png>]
+Overfull \hbox (7.35338pt too wide) in paragraph at lines 533--533
 []\OT1/lmr/m/n/12 NATIONAL INSTRUMENTS CORP. \OT1/lmr/m/it/12 Tutorial: Creating and Publishing a LabVIEW
  []
 
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 318.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 533.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
 [1]
 File: Bilder/logo.pdf Graphic file (type pdf)
 <use Bilder/logo.pdf>
-Package pdftex.def Info: Bilder/logo.pdf  used on input line 326.
+Package pdftex.def Info: Bilder/logo.pdf  used on input line 541.
 (pdftex.def)             Requested size: 71.13188pt x 28.73903pt.
  [2] (Kinematik_Hand-Tracking.aux)
 Package rerunfilecheck Info: File `Kinematik_Hand-Tracking.out' has not changed.
-(rerunfilecheck)             Checksum: 9FB899781230DF7F9DA5CE16BC3A1E6C;2257.
+(rerunfilecheck)             Checksum: 4B8BA0607655D4DA96764EE41921BFDB;2494.
 Package logreq Info: Writing requests to 'Kinematik_Hand-Tracking.run.xml'.
 \openout1 = `Kinematik_Hand-Tracking.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36499 strings out of 480286
- 742288 string characters out of 2888782
- 1441581 words of memory out of 3000000
- 54019 multiletter control sequences out of 15000+600000
- 502982 words of font info for 48 fonts, out of 8000000 for 9000
+ 37373 strings out of 480286
+ 753372 string characters out of 2888782
+ 1634733 words of memory out of 3000000
+ 54770 multiletter control sequences out of 15000+600000
+ 507161 words of font info for 53 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
- 99i,16n,94p,833b,3068s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmtt.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmsc.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}</home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmr12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Kinematik_Hand-Tracking.pdf (18 pages, 5381173 bytes).
+ 99i,16n,97p,907b,3068s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmsc.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmtt.enc}</home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmcsc10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmr10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmr12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmtk10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Kinematik_Hand-Tracking.pdf (22 pages, 6059408 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 173 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,12 +1,14 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Die zu steuernde \glqq Frankfurter\grqq \ Roboter Hand}}{1}{figure.1.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces PowerGlove von Nintendo \blx@tocontentsinit {0}\cite {NintendoGlove}}}{2}{figure.2.1}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Bautenzug ^^c3^^bcber die Hand f^^c3^^bcr die Finger}}{3}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Bautenzug ^^c3^^bcber die Hand f^^c3^^bcr den Daumen}}{4}{figure.3.2}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ^^c3^^9cbersicht der Dateien des LabVIEW Projektes}}{6}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau des User Panels in der GET-Methode des LabVIEW Servers}}{7}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Aufbau des Block Diagrams in der GET-Methode des LabVIEW Servers}}{7}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Aufbau des Connector Panes in der GET-Methode des LabVIEW Servers}}{8}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces N^^c3^^b6tige Einstellungen in der NI-Webserver-Konfiguration}}{8}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces URL des HTTP-GET Servers}}{9}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot aus dem Demovideo im Anhang}}{9}{figure.4.7}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces VIVE-Tracker f^^c3^^bcr VR der Firma HTC \blx@tocontentsinit {0}\cite {HTCvive}}}{12}{figure.6.1}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces auf Leitf^^c3^^a4higkeit basierender Biegesensor, lizensiert unter \href {https://creativecommons.org/licenses/by/2.0/}{CC BY 2.0}}}{5}{figure.3.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ^^c3^^9cbersicht der Dateien des LabVIEW Projektes}}{10}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau des User Panels in der GET-Methode des LabVIEW Servers}}{11}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Aufbau des Block Diagrams in der GET-Methode des LabVIEW Servers}}{11}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Aufbau des Connector Panes in der GET-Methode des LabVIEW Servers}}{12}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces N^^c3^^b6tige Einstellungen in der NI-Webserver-Konfiguration}}{12}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces URL des HTTP-GET Servers}}{13}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot aus dem Demovideo im Anhang}}{13}{figure.4.7}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces VIVE-Tracker f^^c3^^bcr VR der Firma HTC \blx@tocontentsinit {0}\cite {HTCvive}}}{16}{figure.6.1}%
